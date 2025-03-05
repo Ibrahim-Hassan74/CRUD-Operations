@@ -1,0 +1,39 @@
+﻿@model PersonResponse
+@{
+	ViewBag.Title = "Delete Person";
+	ViewBag.NamePage = "Delete Person";
+}
+
+<div class="row justify-content-center">
+	<div class="col-md-6">
+		<div class="card shadow">
+			<div class="card-body">
+				<a asp-controller="Persons" asp-action="Index" class="btn btn-outline-secondary mb-3">Back to Persons List</a>
+				<h3>Are you sure you want to delete this person?</h3>
+				<form asp-controller="Persons" asp-action="Delete" method="post">
+					<input type="hidden" asp-for="PersonID" />
+
+					<!-- PersonName -->
+					<div class="mb-3">
+						<label asp-for="PersonName" class="form-label">Person Name</label>
+						<input asp-for="PersonName" class="form-control" disabled />
+						<span asp-validation-for="PersonName" class="text-danger"></span>
+					</div>
+
+					<!-- Email -->
+					<div class="mb-3">
+						<label asp-for="Email" class="form-label">Email</label>
+						<input asp-for="Email" class="form-control" disabled />
+						<span asp-validation-for="Email" class="text-danger"></span>
+					</div>
+
+					<!-- Submit Button -->
+					<div class="mb-3">
+						<button type="submit" class="btn btn-danger">Delete</button>
+						<div asp-validation-summary="All" class="text-danger mt-2"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

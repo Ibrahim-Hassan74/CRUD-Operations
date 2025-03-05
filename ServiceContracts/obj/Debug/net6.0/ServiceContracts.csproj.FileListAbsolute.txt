@@ -1,0 +1,15 @@
+E:\aspnetcore\code\CRUDExample\ServiceContracts\bin\Debug\net6.0\ServiceContracts.deps.json
+E:\aspnetcore\code\CRUDExample\ServiceContracts\bin\Debug\net6.0\ServiceContracts.dll
+E:\aspnetcore\code\CRUDExample\ServiceContracts\bin\Debug\net6.0\ServiceContracts.pdb
+E:\aspnetcore\code\CRUDExample\ServiceContracts\bin\Debug\net6.0\Entities.dll
+E:\aspnetcore\code\CRUDExample\ServiceContracts\bin\Debug\net6.0\Entities.pdb
+E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ServiceContracts.csproj.AssemblyReference.cache
+E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ServiceContracts.GeneratedMSBuildEditorConfig.editorconfig
+E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ServiceContracts.AssemblyInfoInputs.cache
+E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ServiceContracts.AssemblyInfo.cs
+E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ServiceContracts.csproj.CoreCompileInputs.cache
+E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ServiceC.04662A29.Up2Date
+E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ServiceContracts.dll
+E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\refint\ServiceContracts.dll
+E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ServiceContracts.pdb
+E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ref\ServiceContracts.dll

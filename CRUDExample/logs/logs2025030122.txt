@@ -1,0 +1,145 @@
+2025-03-01 22:20:12.635 +02:00 [INF] User profile is available. Using 'C:\Users\ibrah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-01 22:20:13.453 +02:00 [INF] Now listening on: http://localhost:5296
+2025-03-01 22:20:13.534 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-01 22:20:13.535 +02:00 [INF] Hosting environment: Development
+2025-03-01 22:20:13.537 +02:00 [INF] Content root path: E:\aspnetcore\code\CRUDExample\CRUDExample\
+2025-03-01 22:20:16.882 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/ - -
+2025-03-01 22:20:17.138 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-01 22:20:17.215 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-01 22:20:17.444 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2025-03-01 22:20:24.625 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-03-01 22:20:32.455 +02:00 [INF] Index action method of persons controller
+2025-03-01 22:20:35.663 +02:00 [INF] GetFilteredPersons in PersonsService
+2025-03-01 22:20:37.025 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-01 22:20:38.042 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReciveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-03-01 22:20:38.215 +02:00 [INF] Time for filtered persons from database completed in 2547.8 ms
+2025-03-01 22:20:44.979 +02:00 [INF] GetSortedPersons of PersonsService
+2025-03-01 22:20:52.497 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-03-01 22:20:53.426 +02:00 [INF] Executing ViewResult, running view Index.
+2025-03-01 22:20:53.690 +02:00 [INF] Executed ViewResult - view Index executed in 364.5829ms.
+2025-03-01 22:20:53.697 +02:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 36246.9097ms
+2025-03-01 22:20:53.701 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-01 22:20:53.707 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 01 Mar 2025 20:20:53 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+2025-03-01 22:20:53.714 +02:00 [INF] HTTP GET / responded 200 in 36591.9492 ms
+2025-03-01 22:20:53.743 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/ - - - 200 - text/html;+charset=utf-8 36869.1857ms
+2025-03-01 22:20:53.801 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/logo.png?v=aecRxRyYOiN8mBAPCCUjQVoYP7ESa9wiyhFyxK68tqM - -
+2025-03-01 22:20:53.803 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/StyleSheet.css?v=CBVX6wBUIvMs6myZucwYzXxnMNdqOKEsV2eorrRtDKg - -
+2025-03-01 22:20:53.822 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /logo.png
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+If-None-Match: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-01 22:20:53.871 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /StyleSheet.css
+Accept: text/css,*/*;q=0.1
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+If-None-Match: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-01 22:20:53.803 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - -
+2025-03-01 22:20:53.893 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - - - 200 13774 application/javascript;+charset=utf-8 92.1663ms
+2025-03-01 22:20:53.897 +02:00 [INF] The file /logo.png was not modified
+2025-03-01 22:20:53.897 +02:00 [INF] The file /StyleSheet.css was not modified
+2025-03-01 22:20:53.899 +02:00 [INF] Response:
+StatusCode: 304
+Content-Type: image/png
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Wed, 12 Feb 2025 21:37:37 GMT
+2025-03-01 22:20:53.900 +02:00 [INF] Response:
+StatusCode: 304
+Content-Type: text/css
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 13 Feb 2025 18:34:54 GMT
+2025-03-01 22:20:53.902 +02:00 [INF] HTTP GET /logo.png responded 304 in 79.4905 ms
+2025-03-01 22:20:53.903 +02:00 [INF] HTTP GET /StyleSheet.css responded 304 in 32.8180 ms
+2025-03-01 22:20:53.906 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/logo.png?v=aecRxRyYOiN8mBAPCCUjQVoYP7ESa9wiyhFyxK68tqM - - - 304 - image/png 105.0903ms
+2025-03-01 22:20:53.909 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/StyleSheet.css?v=CBVX6wBUIvMs6myZucwYzXxnMNdqOKEsV2eorrRtDKg - - - 304 - text/css 105.9591ms
+2025-03-01 22:20:53.928 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_vs/browserLink - -
+2025-03-01 22:20:54.029 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 101.2412ms
+2025-03-01 22:20:54.219 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/favicon.ico - -
+2025-03-01 22:20:54.222 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-01 22:20:54.229 +02:00 [INF] Response:
+StatusCode: 404
+2025-03-01 22:20:54.230 +02:00 [INF] HTTP GET /favicon.ico responded 404 in 8.3962 ms
+2025-03-01 22:20:54.233 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/favicon.ico - - - 404 0 - 14.3814ms

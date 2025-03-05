@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Upload Countries";
+    ViewBag.NamePage = "Upload Countries";
+}
+
+
+<div class="container">
+    <form asp-controller="Countries" asp-action="UploadFromExcel" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label class="form-label">Choose an Excel file (.xlsx)</label>
+            <input type="file" name="excelFile" class="form-control" />
+            @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+            {
+                <div class="text-danger mt-2">
+                    @ViewBag.ErrorMessage
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(ViewBag.Message))
+            {
+                <div class="text-success mt-2">
+                    @ViewBag.Message
+                </div>
+            }
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-success">Upload</button>
+        </div>
+    </form>
+</div>

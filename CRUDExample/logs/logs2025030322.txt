@@ -1,0 +1,228 @@
+2025-03-03 22:10:48.444 +02:00 [INF] User profile is available. Using 'C:\Users\ibrah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-03 22:10:48.703 +02:00 [INF] Now listening on: http://localhost:5296
+2025-03-03 22:10:51.511 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/ - -
+2025-03-03 22:10:51.676 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 22:10:51.743 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Dashboard (CRUDExample)'
+2025-03-03 22:10:51.848 +02:00 [INF] Route matched with {action = "Dashboard", controller = "Persons"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Dashboard() on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2025-03-03 22:11:00.900 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuting
+2025-03-03 22:11:06.775 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuting
+2025-03-03 22:11:11.989 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuted
+2025-03-03 22:11:11.992 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuted
+2025-03-03 22:11:12.016 +02:00 [INF] Executing ViewResult, running view Dashboard.
+2025-03-03 22:11:12.328 +02:00 [INF] Executed ViewResult - view Dashboard executed in 323.6981ms.
+2025-03-03 22:11:12.339 +02:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Dashboard (CRUDExample) in 20484.7956ms
+2025-03-03 22:11:12.342 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Dashboard (CRUDExample)'
+2025-03-03 22:11:12.344 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 03 Mar 2025 20:11:11 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Controller: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-03-03 22:11:12.349 +02:00 [INF] HTTP GET / responded 200 in 20683.2623 ms
+2025-03-03 22:11:12.362 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/ - - - 200 - text/html;+charset=utf-8 20857.6934ms
+2025-03-03 22:11:12.434 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/StyleSheet.css?v=cjLtm4QWm5W3Pa8Jr-vH0_NTcmQo9jvlMfHRtI444gc - -
+2025-03-03 22:11:12.437 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /StyleSheet.css
+Accept: text/css,*/*;q=0.1
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+If-None-Match: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 22:11:12.444 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - -
+2025-03-03 22:11:12.451 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - - - 200 13774 application/javascript;+charset=utf-8 7.0769ms
+2025-03-03 22:11:12.453 +02:00 [INF] The file /StyleSheet.css was not modified
+2025-03-03 22:11:12.455 +02:00 [INF] Response:
+StatusCode: 304
+Content-Type: text/css
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Sat, 01 Mar 2025 22:52:00 GMT
+2025-03-03 22:11:12.457 +02:00 [INF] HTTP GET /StyleSheet.css responded 304 in 20.4974 ms
+2025-03-03 22:11:12.461 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/StyleSheet.css?v=cjLtm4QWm5W3Pa8Jr-vH0_NTcmQo9jvlMfHRtI444gc - - - 304 - text/css 26.2797ms
+2025-03-03 22:11:12.464 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_vs/browserLink - -
+2025-03-03 22:11:12.561 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 96.5743ms
+2025-03-03 22:11:12.796 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/favicon.ico - -
+2025-03-03 22:11:12.798 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 22:11:12.805 +02:00 [INF] Response:
+StatusCode: 404
+2025-03-03 22:11:12.806 +02:00 [INF] HTTP GET /favicon.ico responded 404 in 8.0194 ms
+2025-03-03 22:11:12.809 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/favicon.ico - - - 404 0 - 12.9896ms
+2025-03-03 22:11:15.413 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/Persons/Index - -
+2025-03-03 22:11:15.423 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 22:11:15.428 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-03 22:11:15.461 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2025-03-03 22:11:20.757 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuting
+2025-03-03 22:11:36.018 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuting
+2025-03-03 22:11:47.834 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-03-03 22:11:53.664 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuting
+2025-03-03 22:11:57.487 +02:00 [INF] Index action method of persons controller
+2025-03-03 22:11:57.502 +02:00 [INF] GetFilteredPersons in PersonsService
+2025-03-03 22:11:58.652 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-03 22:11:59.383 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReciveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-03-03 22:11:59.551 +02:00 [INF] Time for filtered persons from database completed in 2045.3 ms
+2025-03-03 22:11:59.576 +02:00 [INF] GetSortedPersons of PersonsService
+2025-03-03 22:11:59.583 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuted
+2025-03-03 22:11:59.585 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-03-03 22:11:59.587 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuted
+2025-03-03 22:11:59.589 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuted
+2025-03-03 22:11:59.596 +02:00 [INF] Executing ViewResult, running view Index.
+2025-03-03 22:11:59.684 +02:00 [INF] Executed ViewResult - view Index executed in 89.3339ms.
+2025-03-03 22:11:59.689 +02:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 44224.6736ms
+2025-03-03 22:11:59.692 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-03 22:11:59.696 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 03 Mar 2025 20:11:59 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-03-03 22:11:59.699 +02:00 [INF] HTTP GET /Persons/Index responded 200 in 44275.7709 ms
+2025-03-03 22:11:59.707 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/Persons/Index - - - 200 - text/html;+charset=utf-8 44294.4311ms
+2025-03-03 22:11:59.752 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - -
+2025-03-03 22:11:59.761 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - - - 200 13774 application/javascript;+charset=utf-8 8.8948ms
+2025-03-03 22:11:59.768 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_vs/browserLink - -
+2025-03-03 22:11:59.790 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.9060ms
+2025-03-03 22:12:17.290 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/Persons/Index - -
+2025-03-03 22:12:17.296 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-03 22:12:17.303 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-03 22:12:17.308 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2025-03-03 22:12:19.925 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuting
+2025-03-03 22:12:21.911 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuting
+2025-03-03 22:12:21.913 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-03-03 22:12:23.907 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuting
+2025-03-03 22:12:23.915 +02:00 [INF] Index action method of persons controller
+2025-03-03 22:12:23.921 +02:00 [INF] GetFilteredPersons in PersonsService
+2025-03-03 22:12:23.931 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-03 22:12:23.953 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReciveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-03-03 22:12:23.957 +02:00 [INF] Time for filtered persons from database completed in 27.9 ms
+2025-03-03 22:12:23.959 +02:00 [INF] GetSortedPersons of PersonsService
+2025-03-03 22:12:32.601 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuted
+2025-03-03 22:12:32.608 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-03-03 22:12:36.223 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuted
+2025-03-03 22:12:39.398 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecuted
+2025-03-03 22:12:39.407 +02:00 [INF] Executing ViewResult, running view Index.
+2025-03-03 22:12:39.458 +02:00 [INF] Executed ViewResult - view Index executed in 50.7876ms.
+2025-03-03 22:12:39.462 +02:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 22149.3621ms
+2025-03-03 22:12:39.466 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-03 22:12:39.468 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 03 Mar 2025 20:12:39 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-03-03 22:12:39.470 +02:00 [INF] HTTP GET /Persons/Index responded 200 in 22173.9958 ms
+2025-03-03 22:12:39.475 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/Persons/Index - - - 200 - text/html;+charset=utf-8 22184.8558ms
+2025-03-03 22:12:39.524 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_vs/browserLink - -
+2025-03-03 22:12:39.528 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - -
+2025-03-03 22:12:39.531 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - - - 200 13774 application/javascript;+charset=utf-8 2.6965ms
+2025-03-03 22:12:39.546 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.2570ms

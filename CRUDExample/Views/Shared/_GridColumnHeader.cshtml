@@ -1,0 +1,25 @@
+﻿@{
+    string sortOrder = ViewBag.SortOrder.ToLower() == "asc" ? "DESC" : "ASC";
+}
+
+<th class="text-nowrap">
+    <a href="~/persons/index?searchBy=@ViewBag.SearchBy&searchString=@ViewBag.SearchString&sortBy=@ViewBag.ColumnName&sortOrder=@sortOrder"
+       class="text-decoration-none text-dark d-flex align-items-center gap-2">
+        <span class="table-header-tag">@ViewBag.DisplayName</span>
+        @if (ViewBag.SortBy == ViewBag.ColumnName)
+        {
+            if (ViewBag.SortOrder.ToLower() == "asc")
+            {
+                <i class="bi bi-sort-up icon-i"></i>
+            }
+            else
+            {
+                <i class="bi bi-sort-down icon-i"></i>
+            }
+        }
+        else
+        {
+            <i class="bi bi-filter icon-i"></i>
+        }
+    </a>
+</th>
