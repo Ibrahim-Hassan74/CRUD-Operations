@@ -12,3 +12,4 @@ E:\aspnetcore\code\CRUDExample\Entities\obj\Debug\net6.0\ref\Entities.dll
 E:\aspnetcore\code\CRUDExample\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
 E:\aspnetcore\code\CRUDExample\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
 E:\aspnetcore\code\CRUDExample\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
+E:\aspnetcore\code\CRUDExample\Entities\obj\Debug\net6.0\Entities.sourcelink.json

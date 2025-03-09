@@ -1,0 +1,177 @@
+2025-03-08 01:40:03.434 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 01:40:03.459 +02:00 [INF] Hosting environment: Development
+2025-03-08 01:40:03.464 +02:00 [INF] Content root path: E:\aspnetcore\code\CRUDExample\CRUDExample\
+2025-03-08 01:41:10.198 +02:00 [INF] User profile is available. Using 'C:\Users\ibrah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-08 01:41:10.626 +02:00 [INF] Now listening on: http://localhost:5296
+2025-03-08 01:41:12.982 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/ - -
+2025-03-08 01:41:13.625 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-08 01:41:13.823 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-08 01:41:14.280 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2025-03-08 01:41:15.367 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-08 01:41:15.371 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-08 01:41:15.378 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-08 01:41:15.383 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-03-08 01:41:22.242 +02:00 [INF] Index action method of persons controller
+2025-03-08 01:41:22.276 +02:00 [INF] GetFilteredPersons in PersonsService
+2025-03-08 01:41:24.565 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-08 01:41:25.989 +02:00 [INF] Executed DbCommand (111ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReciveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-03-08 01:41:26.355 +02:00 [INF] Time for filtered persons from database completed in 4073.1 ms
+2025-03-08 01:41:26.392 +02:00 [INF] GetSortedPersons of PersonsService
+2025-03-08 01:41:26.409 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-03-08 01:41:26.418 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-08 01:41:26.424 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-08 01:41:26.430 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-08 01:41:26.449 +02:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2025-03-08 01:41:26.471 +02:00 [INF] Executing ViewResult, running view Index.
+2025-03-08 01:41:26.974 +02:00 [INF] Executed ViewResult - view Index executed in 505.4981ms.
+2025-03-08 01:41:26.982 +02:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2025-03-08 01:41:26.992 +02:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 12694.5045ms
+2025-03-08 01:41:27.000 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-08 01:41:27.009 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 07 Mar 2025 23:41:26 GMT
+Server: Kestrel
+Last-Modified: 08/03/2025 01:41
+Transfer-Encoding: chunked
+My-Key-From-Controller: [Redacted]
+My-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+2025-03-08 01:41:27.022 +02:00 [INF] HTTP GET / responded 200 in 13409.1475 ms
+2025-03-08 01:41:27.062 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/ - - - 200 - text/html;+charset=utf-8 14094.1749ms
+2025-03-08 01:41:27.149 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - -
+2025-03-08 01:41:27.167 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - - - 200 13774 application/javascript;+charset=utf-8 18.0885ms
+2025-03-08 01:41:27.242 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_vs/browserLink - -
+2025-03-08 01:41:27.479 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 236.6035ms
+2025-03-08 01:41:27.737 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/favicon.ico - -
+2025-03-08 01:41:27.742 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-08 01:41:27.757 +02:00 [INF] Response:
+StatusCode: 404
+2025-03-08 01:41:27.760 +02:00 [INF] HTTP GET /favicon.ico responded 404 in 18.6348 ms
+2025-03-08 01:41:27.767 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/favicon.ico - - - 404 0 - 30.2183ms
+2025-03-08 01:41:31.742 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/Persons/Create - -
+2025-03-08 01:41:31.755 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Create
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-08 01:41:31.762 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2025-03-08 01:41:31.776 +02:00 [INF] Route matched with {action = "Create", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2025-03-08 01:41:31.786 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-08 01:41:31.791 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-08 01:41:31.805 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-08 01:41:31.824 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2025-03-08 01:41:31.842 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-08 01:41:31.845 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-08 01:41:31.852 +02:00 [INF] Executing ViewResult, running view Create.
+2025-03-08 01:41:32.054 +02:00 [INF] Executed ViewResult - view Create executed in 205.0814ms.
+2025-03-08 01:41:32.060 +02:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Create (CRUDExample) in 275.8166ms
+2025-03-08 01:41:32.063 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2025-03-08 01:41:32.067 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 07 Mar 2025 23:41:31 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Controller: [Redacted]
+My-Key-From-Global: [Redacted]
+X-Frame-Options: [Redacted]
+2025-03-08 01:41:32.070 +02:00 [INF] HTTP GET /Persons/Create responded 200 in 315.4353 ms
+2025-03-08 01:41:32.077 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/Persons/Create - - - 200 - text/html;+charset=utf-8 335.3927ms
+2025-03-08 01:41:32.187 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - -
+2025-03-08 01:41:32.187 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_vs/browserLink - -
+2025-03-08 01:41:32.191 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - - - 200 13774 application/javascript;+charset=utf-8 3.9368ms
+2025-03-08 01:41:32.293 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 105.9991ms
+2025-03-08 01:41:35.621 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5296/Persons/Create application/x-www-form-urlencoded 258
+2025-03-08 01:41:35.634 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /Persons/Create
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cache-Control: max-age=0
+Content-Type: application/x-www-form-urlencoded
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Content-Length: 258
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-08 01:41:35.645 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2025-03-08 01:41:35.668 +02:00 [INF] Route matched with {action = "Create", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ServiceContracts.DTO.PersonAddRequest) on controller CRUDExample.Controllers.PersonsController (CRUDExample).

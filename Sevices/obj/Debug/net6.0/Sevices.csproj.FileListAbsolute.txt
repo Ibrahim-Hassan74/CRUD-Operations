@@ -17,3 +17,4 @@ E:\aspnetcore\code\CRUDExample\Sevices\obj\Debug\net6.0\Sevices.pdb
 E:\aspnetcore\code\CRUDExample\Sevices\obj\Debug\net6.0\ref\Sevices.dll
 E:\aspnetcore\code\CRUDExample\Sevices\bin\Debug\net6.0\RepositoryContracts.dll
 E:\aspnetcore\code\CRUDExample\Sevices\bin\Debug\net6.0\RepositoryContracts.pdb
+E:\aspnetcore\code\CRUDExample\Sevices\obj\Debug\net6.0\Sevices.sourcelink.json

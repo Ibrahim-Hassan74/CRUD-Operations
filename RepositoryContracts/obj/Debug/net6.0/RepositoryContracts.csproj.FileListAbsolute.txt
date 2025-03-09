@@ -13,3 +13,4 @@ E:\aspnetcore\code\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryCo
 E:\aspnetcore\code\CRUDExample\RepositoryContracts\obj\Debug\net6.0\refint\RepositoryContracts.dll
 E:\aspnetcore\code\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.pdb
 E:\aspnetcore\code\CRUDExample\RepositoryContracts\obj\Debug\net6.0\ref\RepositoryContracts.dll
+E:\aspnetcore\code\CRUDExample\RepositoryContracts\obj\Debug\net6.0\RepositoryContracts.sourcelink.json

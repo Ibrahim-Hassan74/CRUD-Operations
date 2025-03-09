@@ -109,3 +109,4 @@ E:\aspnetcore\code\CRUDExample\CRUDExample\bin\Debug\net6.0\Serilog.Sinks.MSSqlS
 E:\aspnetcore\code\CRUDExample\CRUDExample\bin\Debug\net6.0\Serilog.Sinks.PeriodicBatching.dll
 E:\aspnetcore\code\CRUDExample\CRUDExample\bin\Debug\net6.0\Serilog.Sinks.Seq.dll
 E:\aspnetcore\code\CRUDExample\CRUDExample\bin\Debug\net6.0\SerilogTimings.dll
+E:\aspnetcore\code\CRUDExample\CRUDExample\obj\Debug\net6.0\CRUDExample.sourcelink.json

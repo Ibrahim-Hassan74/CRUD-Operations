@@ -1,0 +1,94 @@
+2025-03-08 04:33:56.589 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 04:33:56.615 +02:00 [INF] Hosting environment: Development
+2025-03-08 04:33:56.631 +02:00 [INF] Content root path: E:\aspnetcore\code\CRUDExample\CRUDExample\
+2025-03-08 04:38:37.961 +02:00 [INF] User profile is available. Using 'C:\Users\ibrah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-08 04:38:38.436 +02:00 [INF] Now listening on: http://localhost:5296
+2025-03-08 04:38:42.561 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/ - -
+2025-03-08 04:38:43.102 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-User: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-08 04:38:43.232 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-08 04:38:43.480 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2025-03-08 04:38:44.388 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-08 04:38:44.396 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-08 04:38:44.401 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-08 04:38:44.409 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-03-08 04:39:05.679 +02:00 [INF] Index action method of persons controller
+2025-03-08 04:39:06.911 +02:00 [INF] GetFilteredPersons in PersonsService
+2025-03-08 04:39:10.004 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-08 04:39:11.597 +02:00 [INF] Executed DbCommand (179ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReciveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-03-08 04:39:12.002 +02:00 [INF] Time for filtered persons from database completed in 5079.3 ms
+2025-03-08 04:39:15.654 +02:00 [INF] GetSortedPersons of PersonsService
+2025-03-08 04:39:26.907 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-03-08 04:39:26.922 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-08 04:39:26.926 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-08 04:39:26.930 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-08 04:39:34.533 +02:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2025-03-08 04:39:34.553 +02:00 [INF] Executing ViewResult, running view Index.
+2025-03-08 04:39:35.031 +02:00 [INF] Executed ViewResult - view Index executed in 480.1677ms.
+2025-03-08 04:39:35.036 +02:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2025-03-08 04:39:37.825 +02:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 54336.0627ms
+2025-03-08 04:39:37.835 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-08 04:39:37.841 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 08 Mar 2025 02:39:34 GMT
+Server: Kestrel
+Last-Modified: 08/03/2025 04:39
+Transfer-Encoding: chunked
+My-Key-From-Controller: [Redacted]
+My-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+2025-03-08 04:39:37.855 +02:00 [INF] HTTP GET / responded 200 in 54770.3517 ms
+2025-03-08 04:39:37.902 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/ - - - 200 - text/html;+charset=utf-8 55361.9847ms
+2025-03-08 04:39:38.047 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - -
+2025-03-08 04:39:38.110 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/_vs/browserLink - -
+2025-03-08 04:39:38.193 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_framework/aspnetcore-browser-refresh.js - - - 200 13774 application/javascript;+charset=utf-8 145.7449ms
+2025-03-08 04:39:38.459 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 349.3649ms
+2025-03-08 04:39:38.711 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5296/favicon.ico - -
+2025-03-08 04:39:38.715 +02:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Connection: keep-alive
+Host: localhost:5296
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-03-08 04:39:38.726 +02:00 [INF] Response:
+StatusCode: 404
+2025-03-08 04:39:38.729 +02:00 [INF] HTTP GET /favicon.ico responded 404 in 14.4463 ms
+2025-03-08 04:39:38.736 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5296/favicon.ico - - - 404 0 - 24.8492ms

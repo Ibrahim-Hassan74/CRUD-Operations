@@ -31,7 +31,7 @@ builder.Services.AddControllersWithViews(options =>
     //options.Filters.Add<ResponseHeaderActionFilter>(2); // (int order)
     var logger = builder.Services.BuildServiceProvider().GetRequiredService<ILogger<ResponseHeaderActionFilter>>();
 
-    options.Filters.Add(new ResponseHeaderActionFilter(logger, "My-Key-From-Global", "My-Value-From-Global", 2));
+    options.Filters.Add(new ResponseHeaderActionFilter("My-Key-From-Global", "My-Value-From-Global", 2));
 });
 
 builder.Services.AddScoped<ICountriesService, CountriesService>();
@@ -42,6 +42,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+builder.Services.AddTransient<PersonsListActionFilter>();
 
 builder.Services.AddHttpLogging(options =>
 {
