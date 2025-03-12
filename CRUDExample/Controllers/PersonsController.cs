@@ -18,10 +18,10 @@ using System.IO;
 namespace CRUDExample.Controllers
 {
     [Route("[controller]")]
-    [TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "My-Key-From-Controller", "My-Value-From-Controller", 3 }, Order = 3)]
+    //[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "My-Key-From-Controller", "My-Value-From-Controller", 3 }, Order = 3)]
     [TypeFilter(typeof(HandleExceptionFilter))]
     [TypeFilter(typeof(PersonsAlwaysRunResultFilter))]
-
+    [ResponseHeaderFilterFactory("My-Key-From-Controller", "My-Value-From-Controller", 3)]
     public class PersonsController : Controller
     {
         private readonly IPersonsService _personsService;
@@ -43,7 +43,7 @@ namespace CRUDExample.Controllers
         [Route("/")]
         [ServiceFilter(typeof(PersonsListActionFilter), Order = 4)]
         //[TypeFilter(typeof(ResponseHeaderActionFilter), Arguments = new object[] { "My-Key-From-Action", "My-Value-From-Action", 1 }, Order = 1)]
-        [ResponseHeaderActionFilter("My-Key-From-Action", "My-Value-From-Action", 1)]
+        [ResponseHeaderFilterFactory("My-Key-From-Action", "My-Value-From-Action", 1)]
         [TypeFilter(typeof(PersonsListResultFilter))]
         [SkipFilter]
         public async Task<IActionResult> Index(string searchBy, string? searchString,

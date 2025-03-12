@@ -6,6 +6,7 @@ using RepositoryContracts;
 using Repositories;
 using Serilog;
 using CRUDExample.Filters.ActionFilters;
+using CRUDExample;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,32 +25,7 @@ builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider service, L
     .ReadFrom.Services(service);
 });
 
-
-
-builder.Services.AddControllersWithViews(options =>
-{
-    //options.Filters.Add<ResponseHeaderActionFilter>(2); // (int order)
-    var logger = builder.Services.BuildServiceProvider().GetRequiredService<ILogger<ResponseHeaderActionFilter>>();
-
-    options.Filters.Add(new ResponseHeaderActionFilter("My-Key-From-Global", "My-Value-From-Global", 2));
-});
-
-builder.Services.AddScoped<ICountriesService, CountriesService>();
-builder.Services.AddScoped<IPersonsService, PersonsService>();
-builder.Services.AddScoped<IPersonsRepository, PersonsRepository>();
-builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
-
-builder.Services.AddTransient<PersonsListActionFilter>();
-
-builder.Services.AddHttpLogging(options =>
-{
-    options.LoggingFields = Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.Request 
-    | Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponsePropertiesAndHeaders;
-});
+builder.Services.ConfigureServices(builder.Configuration);
 
 var app = builder.Build();
 
@@ -59,12 +35,6 @@ if (builder.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
-
-//app.Logger.LogDebug("debug-message");
-//app.Logger.LogInformation("information-message");
-//app.Logger.LogWarning("warning-message");
-//app.Logger.LogError("error-message");
-//app.Logger.LogCritical("critical-message");
 
 if (!builder.Environment.IsEnvironment("Test"))
 {

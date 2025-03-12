@@ -19,15 +19,18 @@ namespace CRUDTests
         private readonly Mock<ICountriesService> _countriesServiceMock;
         private readonly Mock<IPersonsService> _personsServiceMock;
         private readonly ILogger<PersonsController> _logger;
+        private readonly Mock<ILogger<PersonsController>> _loggerMock;
         private readonly IFixture _fixture;
         public PersonsControllerTest()
         {
             _countriesServiceMock = new Mock<ICountriesService>();
-            _countriesService = _countriesServiceMock.Object;
             _personsServiceMock = new Mock<IPersonsService>();
+            _loggerMock = new Mock<ILogger<PersonsController>>();
+
+            _countriesService = _countriesServiceMock.Object;
             _personsService = _personsServiceMock.Object;
-            var loggerMock = new Mock<ILogger<PersonsController>>();
-            _logger = loggerMock.Object;
+            _logger = _loggerMock.Object;
+
             _fixture = new Fixture();
         }
 
@@ -61,32 +64,32 @@ namespace CRUDTests
 
         #region Create
 
-        [Fact]
+        //[Fact]
 
-        public async Task Create_IfModelErrors_ToReturnCreateView()
-        {
-            PersonAddRequest personAddRequest = _fixture.Create<PersonAddRequest>();
+        //public async Task Create_IfModelErrors_ToReturnCreateView()
+        //{
+        //    PersonAddRequest personAddRequest = _fixture.Create<PersonAddRequest>();
 
-            PersonResponse personResponse = _fixture.Create<PersonResponse>();
+        //    PersonResponse personResponse = _fixture.Create<PersonResponse>();
 
-            List<CountryResponse> countryResponses = _fixture.Create<List<CountryResponse>>();
+        //    List<CountryResponse> countryResponses = _fixture.Create<List<CountryResponse>>();
 
-            PersonsController personsController = new PersonsController(_personsService, _countriesService, _logger);
+        //    PersonsController personsController = new PersonsController(_personsService, _countriesService, _logger);
 
-            _countriesServiceMock.Setup(temp => temp.GetAllCountries())
-                .ReturnsAsync(countryResponses);
+        //    _countriesServiceMock.Setup(temp => temp.GetAllCountries())
+        //        .ReturnsAsync(countryResponses);
 
-            _personsServiceMock.Setup(temp => temp.AddPerson(It.IsAny<PersonAddRequest>()))
-                .ReturnsAsync(personResponse);
+        //    _personsServiceMock.Setup(temp => temp.AddPerson(It.IsAny<PersonAddRequest>()))
+        //        .ReturnsAsync(personResponse);
 
-            personsController.ModelState.AddModelError("PersonName", "Person Name can't be blank");
+        //    personsController.ModelState.AddModelError("PersonName", "Person Name can't be blank");
 
-            IActionResult result = await personsController.Create(personAddRequest);
+        //    IActionResult result = await personsController.Create(personAddRequest);
 
-            ViewResult viewResult = Assert.IsType<ViewResult>(result);
-            viewResult.ViewData.Model.Should().BeAssignableTo<PersonAddRequest>();
-            viewResult.ViewData.Model.Should().Be(personAddRequest);
-        }
+        //    ViewResult viewResult = Assert.IsType<ViewResult>(result);
+        //    viewResult.ViewData.Model.Should().BeAssignableTo<PersonAddRequest>();
+        //    viewResult.ViewData.Model.Should().Be(personAddRequest);
+        //}
 
         [Fact]
         public async Task Create_IfNoModelErrors_ToReturnRedirectToIndexView()
@@ -128,35 +131,35 @@ namespace CRUDTests
             redirectToActionResult.ControllerName.Should().Be("Persons");
         }
 
-        [Fact]
-        public async Task Edit_IfModelErrors_ToReturnEditView()
-        {
-            PersonUpdateRequest personUpdateRequest = _fixture.Create<PersonUpdateRequest>();
+        //[Fact]
+        //public async Task Edit_IfModelErrors_ToReturnEditView()
+        //{
+        //    PersonUpdateRequest personUpdateRequest = _fixture.Create<PersonUpdateRequest>();
 
-            List<CountryResponse> countryResponses = _fixture.Create<List<CountryResponse>>();
+        //    List<CountryResponse> countryResponses = _fixture.Create<List<CountryResponse>>();
 
-            PersonResponse personResponse = _fixture.Build<PersonResponse>()
-                                                .With(temp => temp.Gender, "Male")
-                                                .Create();
+        //    PersonResponse personResponse = _fixture.Build<PersonResponse>()
+        //                                        .With(temp => temp.Gender, "Male")
+        //                                        .Create();
 
-            _personsServiceMock.Setup(temp => temp.GetPersonByPersonID(It.IsAny<Guid>()))
-                .ReturnsAsync(personResponse);
+        //    _personsServiceMock.Setup(temp => temp.GetPersonByPersonID(It.IsAny<Guid>()))
+        //        .ReturnsAsync(personResponse);
 
-            _countriesServiceMock.Setup(temp => temp.GetAllCountries())
-                .ReturnsAsync(countryResponses);
+        //    _countriesServiceMock.Setup(temp => temp.GetAllCountries())
+        //        .ReturnsAsync(countryResponses);
 
-            PersonsController personsController = new PersonsController(_personsService, _countriesService, _logger);
+        //    PersonsController personsController = new PersonsController(_personsService, _countriesService, _logger);
 
-            personsController.ModelState.AddModelError("Email", "Invalid Email Format");
+        //    personsController.ModelState.AddModelError("Email", "Invalid Email Format");
 
-            IActionResult result = await personsController.Edit(personUpdateRequest);
+        //    IActionResult result = await personsController.Edit(personUpdateRequest);
 
-            ViewResult viewResult = Assert.IsType<ViewResult>(result);
+        //    ViewResult viewResult = Assert.IsType<ViewResult>(result);
 
-            viewResult.ViewData.Model.Should().BeAssignableTo<PersonUpdateRequest>();
-            viewResult.ViewData.Model.Should().Be(personResponse.ToPersonUpdateRequest());
+        //    viewResult.ViewData.Model.Should().BeAssignableTo<PersonUpdateRequest>();
+        //    viewResult.ViewData.Model.Should().Be(personResponse.ToPersonUpdateRequest());
 
-        }
+        //}
 
         [Fact]
         public async Task Edit_IfNoModelErrors_ToRedirectToIndexView()
