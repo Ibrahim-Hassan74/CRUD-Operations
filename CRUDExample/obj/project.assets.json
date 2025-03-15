@@ -4080,6 +4080,16 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "Excetions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Excetions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Excetions.dll": {}
+        }
+      },
       "Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4127,6 +4137,7 @@
         "dependencies": {
           "CsvHelper": "27.2.1",
           "EPPlus": "6.0.6",
+          "Excetions": "1.0.0",
           "RepositoryContracts": "1.0.0",
           "Serilog.Extensions.Hosting": "5.0.1",
           "SerilogTimings": "3.0.1",
@@ -11082,6 +11093,11 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "Excetions/1.0.0": {
+      "type": "project",
+      "path": "../Excetions/Excetions.csproj",
+      "msbuildProject": "../Excetions/Excetions.csproj"
+    },
     "Repositories/1.0.0": {
       "type": "project",
       "path": "../Repositories/Repositories.csproj",
@@ -11106,6 +11122,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Entities >= 1.0.0",
+      "Excetions >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "Repositories >= 1.0.0",
@@ -11154,6 +11171,9 @@
           "projectReferences": {
             "E:\\aspnetcore\\code\\CRUDExample\\Entities\\Entities.csproj": {
               "projectPath": "E:\\aspnetcore\\code\\CRUDExample\\Entities\\Entities.csproj"
+            },
+            "E:\\aspnetcore\\code\\CRUDExample\\Excetions\\Excetions.csproj": {
+              "projectPath": "E:\\aspnetcore\\code\\CRUDExample\\Excetions\\Excetions.csproj"
             },
             "E:\\aspnetcore\\code\\CRUDExample\\Repositories\\Repositories.csproj": {
               "projectPath": "E:\\aspnetcore\\code\\CRUDExample\\Repositories\\Repositories.csproj"

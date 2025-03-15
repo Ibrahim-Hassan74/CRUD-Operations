@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Error";
+}
+
+<div class="container d-flex flex-column align-items-center justify-content-center vh-100 text-center">
+    <img src="~/error.svg" alt="Error" class="img-fluid" style="max-width: 400px;">
+
+    <h1 class="mt-4 fw-bold text-danger">Oops! Something went wrong.</h1>
+
+    <h2 class="text-muted">@ViewBag.ErrorMessage</h2>
+
+    <a href="/" class="btn btn-primary mt-4 px-4">Go Back Home</a>
+</div>

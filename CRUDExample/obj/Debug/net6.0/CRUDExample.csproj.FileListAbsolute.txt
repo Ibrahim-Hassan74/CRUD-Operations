@@ -110,3 +110,5 @@ E:\aspnetcore\code\CRUDExample\CRUDExample\bin\Debug\net6.0\Serilog.Sinks.Period
 E:\aspnetcore\code\CRUDExample\CRUDExample\bin\Debug\net6.0\Serilog.Sinks.Seq.dll
 E:\aspnetcore\code\CRUDExample\CRUDExample\bin\Debug\net6.0\SerilogTimings.dll
 E:\aspnetcore\code\CRUDExample\CRUDExample\obj\Debug\net6.0\CRUDExample.sourcelink.json
+E:\aspnetcore\code\CRUDExample\CRUDExample\bin\Debug\net6.0\Excetions.dll
+E:\aspnetcore\code\CRUDExample\CRUDExample\bin\Debug\net6.0\Excetions.pdb

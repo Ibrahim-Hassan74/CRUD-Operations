@@ -1,3 +1,4 @@
+wwwroot\error.svg
 wwwroot\jquery.min.js
 wwwroot\jquery.validate.min.js
 wwwroot\jquery.validate.unobtrusive.min.js

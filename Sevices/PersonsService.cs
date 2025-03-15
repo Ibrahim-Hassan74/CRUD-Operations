@@ -16,6 +16,7 @@ using System.Linq.Expressions;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using SerilogTimings;
+using Excetions;
 
 namespace Sevices
 {
@@ -265,7 +266,7 @@ namespace Sevices
 
             Person? person = await _personsRepository.GetPersonByID(personUpdateRequest.PersonID);
             if (person is null)
-                throw new ArgumentException("Given Person ID doesn't exist");
+                throw new InvalidPersonIDException("Given Person ID doesn't exist");
 
             person.PersonName = personUpdateRequest.PersonName;
             person.Email = personUpdateRequest.Email;

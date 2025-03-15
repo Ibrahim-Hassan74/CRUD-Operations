@@ -7,6 +7,7 @@ using Repositories;
 using Serilog;
 using CRUDExample.Filters.ActionFilters;
 using CRUDExample;
+using CRUDExample.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,12 +30,20 @@ builder.Services.ConfigureServices(builder.Configuration);
 
 var app = builder.Build();
 
-app.UseSerilogRequestLogging();
 
 if (builder.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
+else
+{
+    app.UseExceptionHandler("/Error");
+    app.UseExceptionHandlingMiddleware();
+}
+
+//app.UseStatusCodePagesWithRedirects("/Error/{0}");
+
+app.UseSerilogRequestLogging();
 
 if (!builder.Environment.IsEnvironment("Test"))
 {

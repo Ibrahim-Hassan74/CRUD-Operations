@@ -1169,6 +1169,16 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "Excetions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Excetions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Excetions.dll": {}
+        }
+      },
       "RepositoryContracts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2902,6 +2912,11 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "Excetions/1.0.0": {
+      "type": "project",
+      "path": "../Excetions/Excetions.csproj",
+      "msbuildProject": "../Excetions/Excetions.csproj"
+    },
     "RepositoryContracts/1.0.0": {
       "type": "project",
       "path": "../RepositoryContracts/RepositoryContracts.csproj",
@@ -2917,6 +2932,7 @@
     "net6.0": [
       "CsvHelper >= 27.2.1",
       "EPPlus >= 6.0.6",
+      "Excetions >= 1.0.0",
       "RepositoryContracts >= 1.0.0",
       "Serilog.Extensions.Hosting >= 5.0.1",
       "SerilogTimings >= 3.0.1",
@@ -2955,6 +2971,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "E:\\aspnetcore\\code\\CRUDExample\\Excetions\\Excetions.csproj": {
+              "projectPath": "E:\\aspnetcore\\code\\CRUDExample\\Excetions\\Excetions.csproj"
+            },
             "E:\\aspnetcore\\code\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj": {
               "projectPath": "E:\\aspnetcore\\code\\CRUDExample\\RepositoryContracts\\RepositoryContracts.csproj"
             },

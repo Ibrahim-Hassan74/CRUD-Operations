@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "E:\\aspnetcore\\code\\CRUDExample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B83FC880-16D8-4415-8D17-011496CAE45A}|CRUDTests\\CRUDTests.csproj|e:\\aspnetcore\\code\\crudexample\\crudtests\\personscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B83FC880-16D8-4415-8D17-011496CAE45A}|CRUDTests\\CRUDTests.csproj|solutionrelative:crudtests\\personscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\filters\\resultfilters\\personslistresultfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\filters\\resultfilters\\personslistresultfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\startupextensions\\configureservicecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\startupextensions\\configureservicecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 462,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,53 +47,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PersonsController.cs",
-              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Controllers\\PersonsController.cs",
-              "RelativeDocumentMoniker": "CRUDExample\\Controllers\\PersonsController.cs",
-              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Controllers\\PersonsController.cs",
-              "RelativeToolTip": "CRUDExample\\Controllers\\PersonsController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAE0AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T19:34:50.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonsListResultFilter.cs",
-              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Filters\\ResultFilters\\PersonsListResultFilter.cs",
-              "RelativeDocumentMoniker": "CRUDExample\\Filters\\ResultFilters\\PersonsListResultFilter.cs",
-              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Filters\\ResultFilters\\PersonsListResultFilter.cs",
-              "RelativeToolTip": "CRUDExample\\Filters\\ResultFilters\\PersonsListResultFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T19:32:23.141Z",
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Views\\Home\\Error.cshtml",
+              "RelativeDocumentMoniker": "CRUDExample\\Views\\Home\\Error.cshtml",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Views\\Home\\Error.cshtml",
+              "RelativeToolTip": "CRUDExample\\Views\\Home\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-15T00:25:17.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PersonsControllerTest.cs",
-              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDTests\\PersonsControllerTest.cs",
-              "RelativeDocumentMoniker": "CRUDTests\\PersonsControllerTest.cs",
-              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDTests\\PersonsControllerTest.cs",
-              "RelativeToolTip": "CRUDTests\\PersonsControllerTest.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAI0AAABUAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CRUDExample\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CRUDExample\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T19:22:04.946Z",
+              "WhenOpened": "2025-03-15T00:16:29.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ConfigureServiceCollection.cs",
-              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\StartupExtensions\\ConfigureServiceCollection.cs",
-              "RelativeDocumentMoniker": "CRUDExample\\StartupExtensions\\ConfigureServiceCollection.cs",
-              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\StartupExtensions\\ConfigureServiceCollection.cs",
-              "RelativeToolTip": "CRUDExample\\StartupExtensions\\ConfigureServiceCollection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Title": "PersonsController.cs",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Controllers\\PersonsController.cs",
+              "RelativeDocumentMoniker": "CRUDExample\\Controllers\\PersonsController.cs",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Controllers\\PersonsController.cs",
+              "RelativeToolTip": "CRUDExample\\Controllers\\PersonsController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwF0AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T19:00:42.79Z",
+              "WhenOpened": "2025-03-14T23:34:54.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CRUDExample\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CRUDExample\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-14T22:36:22.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "CRUDExample\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "CRUDExample\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIAwwBkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T22:29:08.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\appsettings.json",
+              "RelativeDocumentMoniker": "CRUDExample\\appsettings.json",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\appsettings.json",
+              "RelativeToolTip": "CRUDExample\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-14T21:52:29.696Z",
               "EditorCaption": ""
             },
             {
@@ -96,9 +130,9 @@
               "RelativeDocumentMoniker": "CRUDExample\\Program.cs",
               "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Program.cs",
               "RelativeToolTip": "CRUDExample\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T22:56:25.317Z",
+              "WhenOpened": "2025-03-14T21:52:18.369Z",
               "EditorCaption": ""
             }
           ]

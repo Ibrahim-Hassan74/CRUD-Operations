@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\StyleSheet.css"
     },
     {
+      "Id": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\wwwroot\\error.svg",
+      "PackagePath": "staticwebassets\\error.svg"
+    },
+    {
       "Id": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\wwwroot\\jquery.min.js",
       "PackagePath": "staticwebassets\\jquery.min.js"
     },
