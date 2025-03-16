@@ -3269,6 +3269,7 @@
       "CRUDExample/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
+          "Excetions": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5",
           "Repositories": "1.0.0",
           "RepositoryContracts": "1.0.0",
@@ -3283,7 +3284,7 @@
         },
         "runtime": {
           "CRUDExample.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         },
@@ -3297,12 +3298,23 @@
         },
         "runtime": {
           "Entities.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         },
         "compile": {
           "Entities.dll": {}
+        }
+      },
+      "Excetions/1.0.0": {
+        "runtime": {
+          "Excetions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "Excetions.dll": {}
         }
       },
       "Repositories/1.0.0": {
@@ -3312,7 +3324,7 @@
         },
         "runtime": {
           "Repositories.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         },
@@ -3326,7 +3338,7 @@
         },
         "runtime": {
           "RepositoryContracts.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         },
@@ -3341,7 +3353,7 @@
         },
         "runtime": {
           "ServiceContracts.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         },
@@ -3353,6 +3365,7 @@
         "dependencies": {
           "CsvHelper": "27.2.1",
           "EPPlus": "6.0.6",
+          "Excetions": "1.0.0",
           "RepositoryContracts": "1.0.0",
           "Serilog.Extensions.Hosting": "5.0.1",
           "SerilogTimings": "3.0.1",
@@ -3360,7 +3373,7 @@
         },
         "runtime": {
           "Sevices.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         },
@@ -6937,6 +6950,11 @@
       "sha512": ""
     },
     "Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Excetions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

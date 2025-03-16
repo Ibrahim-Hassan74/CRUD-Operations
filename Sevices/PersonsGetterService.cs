@@ -20,52 +20,18 @@ using Excetions;
 
 namespace Sevices
 {
-    public class PersonsService : IPersonsService
+    public class PersonsGetterService : IPersonsGetterService
     {
         private readonly IPersonsRepository _personsRepository;
-        private readonly ILogger<PersonsService> _logger;
+        private readonly ILogger<PersonsGetterService> _logger;
         private readonly IDiagnosticContext _diagnosticContext;
         //private readonly ICountriesService _countries;
-        public PersonsService(IPersonsRepository personsRepository, ILogger<PersonsService> logger, IDiagnosticContext diagnosticContext)
+        public PersonsGetterService(IPersonsRepository personsRepository, ILogger<PersonsGetterService> logger, IDiagnosticContext diagnosticContext)
         {
             //_countries = countriesService;
             _personsRepository = personsRepository;
             _logger = logger;
             _diagnosticContext = diagnosticContext;
-        }
-
-        public async Task<PersonResponse> AddPerson(PersonAddRequest? personAddRequest)
-        {
-            if (personAddRequest is null)
-                throw new ArgumentNullException(nameof(personAddRequest));
-
-            #region validtion with if statament
-            //if (personAddRequest.PersonName is null ||
-            //    personAddRequest.Email is null ||
-            //    personAddRequest.Address is null ||
-            //    personAddRequest.DateOfBirth is null ||
-            //    personAddRequest.Gender is null ||
-            //    personAddRequest.CountryID is null)
-            //    throw new ArgumentException(nameof(personAddRequest.PersonName));
-            //string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-            //if (!Regex.IsMatch(personAddRequest?.Email, pattern))
-            //    throw new FormatException(nameof(personAddRequest.Email));
-            #endregion
-
-            VaildationHelper.ModelValidation(personAddRequest);
-
-            if (personAddRequest.DateOfBirth.HasValue && personAddRequest.DateOfBirth.Value.Year > 2010)
-                throw new InvalidOperationException(nameof(personAddRequest.DateOfBirth));
-
-            Person person = personAddRequest.ToPerson();
-            person.PersonID = Guid.NewGuid();
-
-            //await _personsRepository.Persons.AddAsync(person);
-            //await _personsRepository.SaveChangesAsync();
-            await _personsRepository.AddPerson(person);
-            //_db.sp_InsertPerson(person);
-
-            return person.ToPersonResponse();
         }
 
         public async Task<List<PersonResponse>> GetAllPersons()
@@ -212,89 +178,6 @@ namespace Sevices
 
             return persons.Select(temp => temp.ToPersonResponse()).ToList();
         }
-
-
-
-
-
-        private List<PersonResponse> GetSortedPersons(List<PersonResponse> allPersons, PropertyInfo propertyInfo, SortOrderOptions sortOrder)
-        {
-
-            if (sortOrder == SortOrderOptions.ASC)
-            {
-                if (propertyInfo.PropertyType == typeof(string))
-                    return allPersons
-                        .OrderBy(x => (string?)propertyInfo.GetValue(x), StringComparer.OrdinalIgnoreCase)
-                        .ToList();
-                return allPersons
-                    .OrderBy(x => propertyInfo.GetValue(x))
-                    .ToList();
-            }
-            if (propertyInfo.PropertyType == typeof(string))
-                return allPersons
-                    .OrderByDescending(x => (string?)propertyInfo.GetValue(x), StringComparer.OrdinalIgnoreCase)
-                    .ToList();
-            return allPersons
-                .OrderByDescending(x => propertyInfo.GetValue(x))
-                .ToList();
-        }
-
-        public async Task<List<PersonResponse>> GetSortedPersons(List<PersonResponse> allPersons, string sortBy, SortOrderOptions sortOrder)
-        {
-            _logger.LogInformation("GetSortedPersons of PersonsService");
-            if (string.IsNullOrEmpty(sortBy))
-                return allPersons;
-            PropertyInfo? propertyInfo = typeof(PersonResponse).GetProperty(sortBy,
-                BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance);
-
-            if (propertyInfo is null)
-                return allPersons;
-
-            if (sortOrder == SortOrderOptions.ASC)
-                return GetSortedPersons(allPersons, propertyInfo, sortOrder);
-
-            return GetSortedPersons(allPersons, propertyInfo, sortOrder);
-        }
-
-        public async Task<PersonResponse> UpdatePerson(PersonUpdateRequest? personUpdateRequest)
-        {
-            if (personUpdateRequest is null)
-                throw new ArgumentNullException(nameof(personUpdateRequest));
-
-
-            VaildationHelper.ModelValidation(personUpdateRequest);
-
-            Person? person = await _personsRepository.GetPersonByID(personUpdateRequest.PersonID);
-            if (person is null)
-                throw new InvalidPersonIDException("Given Person ID doesn't exist");
-
-            person.PersonName = personUpdateRequest.PersonName;
-            person.Email = personUpdateRequest.Email;
-            person.DateOfBirth = personUpdateRequest.DateOfBirth;
-            person.Gender = personUpdateRequest.Gender.ToString();
-            person.CountryID = personUpdateRequest.CountryID;
-            person.Address = personUpdateRequest.Address;
-            person.ReciveNewsLetters = personUpdateRequest.ReciveNewsLetters;
-            await _personsRepository.UpdatePerson(person);
-
-            //await _personsRepository.SaveChangesAsync();
-            //_db.sp_UpdatePerson(personUpdateRequest.ToPerson());
-
-            return person.ToPersonResponse();
-        }
-
-        public async Task<bool> DeletePerson(Guid? personID)
-        {
-            if (personID is null)
-                throw new ArgumentNullException(nameof(personID));
-            Person? person = await _personsRepository.GetPersonByID(personID.Value);
-            if (person is null)
-                return false;
-            //await _personsRepository.SaveChangesAsync();
-
-            return await _personsRepository.DeletePersonByPersonID(personID.Value);
-        }
-
 
         public async Task<MemoryStream> GetPersonsCSV()
         {

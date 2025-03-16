@@ -7,15 +7,8 @@ namespace ServiceContracts
     /// <summary>
     /// Represents business logic for manipulating country entity
     /// </summary>
-    public interface ICountriesService
+    public interface ICountriesGetterService
     {
-        /// <summary>
-        /// Adds a country object to the list of countries 
-        /// </summary>
-        /// <param name="countryAddRequest">Country object to add</param>
-        /// <returns>Return the country object after adding it (including newly generated country id)</returns>
-        Task<CountryResponse> AddCounty(CountryAddRequest? countryAddRequest);
-
         /// <summary>
         /// Returns all countries from the list 
         /// </summary>
@@ -28,12 +21,5 @@ namespace ServiceContracts
         /// <param name="countryID">countryID (guid) to search</param>
         /// <returns>Mathching country object</returns>
         Task<CountryResponse?> GetCountryByCountryID(Guid? countryID);
-
-        /// <summary>
-        /// Uploads countries from excel file into database
-        /// </summary>
-        /// <param name="formFile">Excel file with list of countries</param>
-        /// <returns>Returns number of countries added</returns>
-        Task<int> UploadCountriesFromExcelFile(IFormFile formFile);
     }
 }

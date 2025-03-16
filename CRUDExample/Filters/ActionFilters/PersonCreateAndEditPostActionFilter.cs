@@ -9,11 +9,11 @@ namespace CRUDExample.Filters.ActionFilters
 {
     public class PersonCreateAndEditPostActionFilter : IAsyncActionFilter
     {
-        private readonly ICountriesService _countriesService;
+        private readonly ICountriesGetterService _countriesGetterService;
         private readonly ILogger<PersonCreateAndEditPostActionFilter> _logger;
-        public PersonCreateAndEditPostActionFilter(ICountriesService countriesService, ILogger<PersonCreateAndEditPostActionFilter> logger)
+        public PersonCreateAndEditPostActionFilter(ICountriesGetterService countriesGetterService, ILogger<PersonCreateAndEditPostActionFilter> logger)
         {
-            _countriesService = countriesService;
+            _countriesGetterService = countriesGetterService;
             _logger = logger;
         }
 
@@ -25,7 +25,7 @@ namespace CRUDExample.Filters.ActionFilters
                 {
                     List<string> errors = personsController.ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage).ToList();
                     personsController.ViewBag.Errors = errors;
-                    var countries = await _countriesService.GetAllCountries();
+                    var countries = await _countriesGetterService.GetAllCountries();
                     personsController.ViewBag.Countries = countries.Select(x =>
                     {
                         return new SelectListItem() { Text = x.CountryName, Value = x.CountryID.ToString() };

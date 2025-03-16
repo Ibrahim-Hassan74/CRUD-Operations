@@ -24,13 +24,23 @@ namespace CRUDExample.Controllers
     [ResponseHeaderFilterFactory("My-Key-From-Controller", "My-Value-From-Controller", 3)]
     public class PersonsController : Controller
     {
-        private readonly IPersonsService _personsService;
-        private readonly ICountriesService _countriesService;
+        private readonly IPersonsGetterService _personsGetterService;
+        private readonly IPersonsAdderService _personsAdderService;
+        private readonly IPersonsSorterService _personsSorterService;
+        private readonly IPersonsDeleterService _personsDeleterService;
+        private readonly IPersonsUpdaterService _personsUpdaterService;
+        private readonly ICountriesGetterService _countriesGetterService;
         private readonly ILogger<PersonsController> _logger;
-        public PersonsController(IPersonsService personsService, ICountriesService countriesService, ILogger<PersonsController> logger)
+        public PersonsController(IPersonsGetterService personsGetterService, IPersonsAdderService personsAdderService, 
+            IPersonsSorterService personsSorterService, IPersonsDeleterService personsDeleterService, 
+            IPersonsUpdaterService personsUpdaterService, ICountriesGetterService countriesGetterService, ILogger<PersonsController> logger)
         {
-            _personsService = personsService;
-            _countriesService = countriesService;
+            _personsGetterService = personsGetterService;
+            _personsAdderService = personsAdderService;
+            _personsSorterService = personsSorterService;
+            _personsDeleterService = personsDeleterService;
+            _personsUpdaterService = personsUpdaterService;
+            _countriesGetterService = countriesGetterService;
             _logger = logger;
         }
 
@@ -53,9 +63,9 @@ namespace CRUDExample.Controllers
             _logger.LogInformation("Index action method of persons controller");
             _logger.LogDebug($"search by: {searchBy}, search string: {searchString}, sort by: {sortBy}, sort order: {sortOrder}");
             // Search
-            var persons = await _personsService.GetFilteredPersons(searchBy, searchString);
+            var persons = await _personsGetterService.GetFilteredPersons(searchBy, searchString);
             List<PersonResponse> personResponses = await
-                _personsService.GetSortedPersons(persons, sortBy, sortOrder);
+                _personsSorterService.GetSortedPersons(persons, sortBy, sortOrder);
             return View(personResponses);
         }
 
@@ -64,7 +74,7 @@ namespace CRUDExample.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var countries = await _countriesService.GetAllCountries();
+            var countries = await _countriesGetterService.GetAllCountries();
             ViewBag.Countries = countries.Select(x =>
             {
                 return new SelectListItem() { Text = x.CountryName, Value = x.CountryID.ToString() };
@@ -79,7 +89,7 @@ namespace CRUDExample.Controllers
         [TypeFilter(typeof(FeatureDisabledResourceFilter), Arguments = new object[] { false })]
         public async Task<IActionResult> Create(PersonAddRequest? personRequest)
         {
-            var personResponse = await _personsService.AddPerson(personRequest);
+            var personResponse = await _personsAdderService.AddPerson(personRequest);
             return RedirectToAction("Index", "Persons");
         }
 
@@ -88,12 +98,12 @@ namespace CRUDExample.Controllers
         [TypeFilter(typeof(TokenResultFilter))]
         public async Task<IActionResult> Edit(Guid? personID)
         {
-            PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personID);
+            PersonResponse? personResponse = await _personsGetterService.GetPersonByPersonID(personID);
             if (personResponse is null)
             {
                 return RedirectToAction("Index", "Persons");
             }
-            var countries = await _countriesService.GetAllCountries();
+            var countries = await _countriesGetterService.GetAllCountries();
             ViewBag.Countries = countries.Select(x =>
             {
                 return new SelectListItem() { Text = x.CountryName, Value = x.CountryID.ToString() };
@@ -108,12 +118,12 @@ namespace CRUDExample.Controllers
         [TypeFilter(typeof(TokenAuthorizationFilter))]
         public async Task<IActionResult> Edit(PersonUpdateRequest? personRequest)
         {
-            PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personRequest?.PersonID);
+            PersonResponse? personResponse = await _personsGetterService.GetPersonByPersonID(personRequest?.PersonID);
             if (personResponse is null)
             {
                 return RedirectToAction("Index", "Persons");
             }
-            await _personsService.UpdatePerson(personRequest);
+            await _personsUpdaterService.UpdatePerson(personRequest);
             return RedirectToAction("Index", "Persons");
         }
 
@@ -121,7 +131,7 @@ namespace CRUDExample.Controllers
         [Route("[action]/{personID}")]
         public async Task<IActionResult> Delete(Guid? personID)
         {
-            PersonResponse? personResponse = await _personsService.GetPersonByPersonID(personID);
+            PersonResponse? personResponse = await _personsGetterService.GetPersonByPersonID(personID);
             if (personResponse is null)
                 return RedirectToAction("Index", "Persons");
             return View(personResponse);
@@ -131,18 +141,18 @@ namespace CRUDExample.Controllers
         [Route("[action]/{personID}")]
         public async Task<IActionResult> Delete(PersonResponse? personResponse)
         {
-            PersonResponse? person = await _personsService.GetPersonByPersonID(personResponse?.PersonID);
+            PersonResponse? person = await _personsGetterService.GetPersonByPersonID(personResponse?.PersonID);
             if (person is null)
                 return RedirectToAction("Index", "Persons");
 
-            bool isDeleted = await _personsService.DeletePerson(personResponse?.PersonID);
+            bool isDeleted = await _personsDeleterService.DeletePerson(personResponse?.PersonID);
             return RedirectToAction("Index", "Persons");
         }
 
         [Route("[action]")]
         public async Task<IActionResult> PersonsPDF()
         {
-            List<PersonResponse> persons = await _personsService.GetAllPersons();
+            List<PersonResponse> persons = await _personsGetterService.GetAllPersons();
             return new ViewAsPdf("PersonsPDF", persons, ViewData)
             {
                 PageMargins = new Rotativa.AspNetCore.Options.Margins() { Bottom = 20, Left = 20, Right = 20, Top = 20 },
@@ -153,7 +163,7 @@ namespace CRUDExample.Controllers
         [Route("[action]")]
         public async Task<IActionResult> PersonsCSV()
         {
-            MemoryStream memoryStream = await _personsService.GetPersonsCSV();
+            MemoryStream memoryStream = await _personsGetterService.GetPersonsCSV();
 
             return File(memoryStream, "application/octet-stream", "persons.csv");
 
@@ -162,7 +172,7 @@ namespace CRUDExample.Controllers
         [Route("[action]")]
         public async Task<IActionResult> PersonsExcel()
         {
-            MemoryStream memoryStream = await _personsService.GetPersonsExcel();
+            MemoryStream memoryStream = await _personsGetterService.GetPersonsExcel();
             return File(memoryStream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "persons.xlsx");
         }
     }
