@@ -436,8 +436,6 @@ namespace CRUDTests
             };
 
             List<PersonResponse> personResponsesExpected = persons.Select(x => x.ToPersonResponse()).ToList();
-
-
             // print personResponseFromAdd 
             _testOutputHelper.WriteLine("Expected: ");
             foreach (var person in personResponsesExpected)

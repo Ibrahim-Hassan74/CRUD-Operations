@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "E:\\aspnetcore\\code\\CRUDExample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B83FC880-16D8-4415-8D17-011496CAE45A}|CRUDTests\\CRUDTests.csproj|e:\\aspnetcore\\code\\crudexample\\crudtests\\personscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B83FC880-16D8-4415-8D17-011496CAE45A}|CRUDTests\\CRUDTests.csproj|solutionrelative:crudtests\\personscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\controllers\\personscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B83FC880-16D8-4415-8D17-011496CAE45A}|CRUDTests\\CRUDTests.csproj|e:\\aspnetcore\\code\\crudexample\\crudtests\\countriesservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B83FC880-16D8-4415-8D17-011496CAE45A}|CRUDTests\\CRUDTests.csproj|solutionrelative:crudtests\\countriesservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|e:\\aspnetcore\\code\\crudexample\\crudexample\\startupextensions\\configureservicecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23770E09-E9C7-4438-86B8-2666F064494C}|CRUDExample\\CRUDExample.csproj|solutionrelative:crudexample\\startupextensions\\configureservicecollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{225E0A4C-0020-4482-A2F0-33E79E6C5C10}|Sevices\\Sevices.csproj|e:\\aspnetcore\\code\\crudexample\\sevices\\personsgetterservicechild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{225E0A4C-0020-4482-A2F0-33E79E6C5C10}|Sevices\\Sevices.csproj|solutionrelative:sevices\\personsgetterservicechild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{225E0A4C-0020-4482-A2F0-33E79E6C5C10}|Sevices\\Sevices.csproj|e:\\aspnetcore\\code\\crudexample\\sevices\\personsgetterservicewithfewexcelfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{225E0A4C-0020-4482-A2F0-33E79E6C5C10}|Sevices\\Sevices.csproj|solutionrelative:sevices\\personsgetterservicewithfewexcelfields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{225E0A4C-0020-4482-A2F0-33E79E6C5C10}|Sevices\\Sevices.csproj|e:\\aspnetcore\\code\\crudexample\\sevices\\personsgetterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{225E0A4C-0020-4482-A2F0-33E79E6C5C10}|Sevices\\Sevices.csproj|solutionrelative:sevices\\personsgetterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +43,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PersonsControllerTest.cs",
-              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDTests\\PersonsControllerTest.cs",
-              "RelativeDocumentMoniker": "CRUDTests\\PersonsControllerTest.cs",
-              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDTests\\PersonsControllerTest.cs",
-              "RelativeToolTip": "CRUDTests\\PersonsControllerTest.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAABGAAAAAAAAAA==",
+              "Title": "PersonsController.cs",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Controllers\\PersonsController.cs",
+              "RelativeDocumentMoniker": "CRUDExample\\Controllers\\PersonsController.cs",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\Controllers\\PersonsController.cs",
+              "RelativeToolTip": "CRUDExample\\Controllers\\PersonsController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T23:59:01.978Z",
+              "WhenOpened": "2025-03-16T01:23:06.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonsGetterServiceChild.cs",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\Sevices\\PersonsGetterServiceChild.cs",
+              "RelativeDocumentMoniker": "Sevices\\PersonsGetterServiceChild.cs",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\Sevices\\PersonsGetterServiceChild.cs",
+              "RelativeToolTip": "Sevices\\PersonsGetterServiceChild.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwA0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T01:13:33.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CountriesServiceTest.cs",
-              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDTests\\CountriesServiceTest.cs",
-              "RelativeDocumentMoniker": "CRUDTests\\CountriesServiceTest.cs",
-              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDTests\\CountriesServiceTest.cs",
-              "RelativeToolTip": "CRUDTests\\CountriesServiceTest.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAkwHYAAABIAAAAAAAAAA==",
+              "Title": "ConfigureServiceCollection.cs",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\StartupExtensions\\ConfigureServiceCollection.cs",
+              "RelativeDocumentMoniker": "CRUDExample\\StartupExtensions\\ConfigureServiceCollection.cs",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\CRUDExample\\StartupExtensions\\ConfigureServiceCollection.cs",
+              "RelativeToolTip": "CRUDExample\\StartupExtensions\\ConfigureServiceCollection.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxwAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T23:56:55.618Z",
+              "WhenOpened": "2025-03-16T00:39:36.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonsGetterServiceWithFewExcelFields.cs",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\Sevices\\PersonsGetterServiceWithFewExcelFields.cs",
+              "RelativeDocumentMoniker": "Sevices\\PersonsGetterServiceWithFewExcelFields.cs",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\Sevices\\PersonsGetterServiceWithFewExcelFields.cs",
+              "RelativeToolTip": "Sevices\\PersonsGetterServiceWithFewExcelFields.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T00:27:29.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonsGetterService.cs",
+              "DocumentMoniker": "E:\\aspnetcore\\code\\CRUDExample\\Sevices\\PersonsGetterService.cs",
+              "RelativeDocumentMoniker": "Sevices\\PersonsGetterService.cs",
+              "ToolTip": "E:\\aspnetcore\\code\\CRUDExample\\Sevices\\PersonsGetterService.cs",
+              "RelativeToolTip": "Sevices\\PersonsGetterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T00:25:43.881Z",
               "EditorCaption": ""
             }
           ]
