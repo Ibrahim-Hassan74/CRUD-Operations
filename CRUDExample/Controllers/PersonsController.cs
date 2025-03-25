@@ -5,6 +5,9 @@ using CRUDExample.Filters.Authorization;
 using CRUDExample.Filters.ExceptionsFilter;
 using CRUDExample.Filters.Resourse;
 using CRUDExample.Filters.ResultFilters;
+using IdentityEntities;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -14,6 +17,7 @@ using ServiceContracts;
 using ServiceContracts.DTO;
 using ServiceContracts.Enums;
 using System.IO;
+using System.Security.Claims;
 
 namespace CRUDExample.Controllers
 {
@@ -31,9 +35,10 @@ namespace CRUDExample.Controllers
         private readonly IPersonsUpdaterService _personsUpdaterService;
         private readonly ICountriesGetterService _countriesGetterService;
         private readonly ILogger<PersonsController> _logger;
+        private readonly UserManager<ApplicationUser> _userManager;
         public PersonsController(IPersonsGetterService personsGetterService, IPersonsAdderService personsAdderService, 
             IPersonsSorterService personsSorterService, IPersonsDeleterService personsDeleterService, 
-            IPersonsUpdaterService personsUpdaterService, ICountriesGetterService countriesGetterService, ILogger<PersonsController> logger)
+            IPersonsUpdaterService personsUpdaterService, ICountriesGetterService countriesGetterService, ILogger<PersonsController> logger, UserManager<ApplicationUser> userManager)
         {
             _personsGetterService = personsGetterService;
             _personsAdderService = personsAdderService;
@@ -42,6 +47,7 @@ namespace CRUDExample.Controllers
             _personsUpdaterService = personsUpdaterService;
             _countriesGetterService = countriesGetterService;
             _logger = logger;
+            _userManager = userManager;
         }
 
         public IActionResult Dashboard()
@@ -66,6 +72,25 @@ namespace CRUDExample.Controllers
             var persons = await _personsGetterService.GetFilteredPersons(searchBy, searchString);
             List<PersonResponse> personResponses = await
                 _personsSorterService.GetSortedPersons(persons, sortBy, sortOrder);
+
+
+
+            //var user = await _userManager.GetUserAsync(User);
+            //var role = await _userManager.GetRolesAsync(user);
+
+            //if (role.Contains("Admin"))
+            //{
+            //    ViewBag.RoleMessage = "Welcome Admin!";
+            //}
+            //else if (role.Contains("User"))
+            //{
+            //    ViewBag.RoleMessage = "Hello, User!";
+            //}
+            //else
+            //{
+            //    ViewBag.RoleMessage = "Unknown Role!";
+            //}
+
             return View(personResponses);
         }
 

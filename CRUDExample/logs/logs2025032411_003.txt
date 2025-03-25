@@ -1,0 +1,242 @@
+2025-03-24 11:04:49.558 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-24 11:04:49.574 +02:00 [INF] Hosting environment: Development
+2025-03-24 11:04:49.579 +02:00 [INF] Content root path: E:\aspnetcore\code\CRUDExample\CRUDExample\
+2025-03-24 11:05:37.328 +02:00 [INF] User profile is available. Using 'C:\Users\ibrah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-24 11:05:38.063 +02:00 [INF] Now listening on: https://localhost:5275
+2025-03-24 11:05:41.257 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/ - -
+2025-03-24 11:05:41.476 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 11:05:41.642 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-24 11:05:41.703 +02:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-03-24 11:05:41.711 +02:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5275/Account/Login?ReturnUrl=%2F
+2025-03-24 11:05:41.726 +02:00 [INF] HTTP GET / responded 302 in 261.7572 ms
+2025-03-24 11:05:41.769 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/ - - - 302 0 - 523.5222ms
+2025-03-24 11:05:41.835 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/Login?ReturnUrl=%2F - -
+2025-03-24 11:05:41.858 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+priority: [Redacted]
+2025-03-24 11:05:41.916 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.Login (CRUDExample)'
+2025-03-24 11:05:41.999 +02:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 11:05:42.659 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 11:05:42.667 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 11:05:42.700 +02:00 [INF] Executing ViewResult, running view Login.
+2025-03-24 11:05:43.602 +02:00 [INF] Executed ViewResult - view Login executed in 903.3281ms.
+2025-03-24 11:05:43.616 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.Login (CRUDExample) in 1608.6256ms
+2025-03-24 11:05:43.621 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.Login (CRUDExample)'
+2025-03-24 11:05:43.625 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 24 Mar 2025 09:05:42 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+X-Frame-Options: [Redacted]
+2025-03-24 11:05:43.628 +02:00 [INF] HTTP GET /Account/Login responded 200 in 1770.8210 ms
+2025-03-24 11:05:43.659 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 1823.6003ms
+2025-03-24 11:05:43.691 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - -
+2025-03-24 11:05:43.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - - - 200 16507 application/javascript;+charset=utf-8 19.0541ms
+2025-03-24 11:05:43.756 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_vs/browserLink - -
+2025-03-24 11:05:44.035 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 279.1784ms
+2025-03-24 11:05:44.380 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/favicon.ico - -
+2025-03-24 11:05:44.384 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 11:05:44.395 +02:00 [INF] Response:
+StatusCode: 404
+2025-03-24 11:05:44.398 +02:00 [INF] HTTP GET /favicon.ico responded 404 in 14.4100 ms
+2025-03-24 11:05:44.406 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/favicon.ico - - - 404 0 - 26.3148ms
+2025-03-24 11:05:48.557 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Persons/Index - -
+2025-03-24 11:05:48.568 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 11:05:48.576 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-24 11:05:48.581 +02:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-03-24 11:05:48.585 +02:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5275/Account/Login?ReturnUrl=%2FPersons%2FIndex
+2025-03-24 11:05:48.591 +02:00 [INF] HTTP GET /Persons/Index responded 302 in 23.8043 ms
+2025-03-24 11:05:48.599 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Persons/Index - - - 302 0 - 42.3380ms
+2025-03-24 11:05:48.613 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/Login?ReturnUrl=%2FPersons%2FIndex - -
+2025-03-24 11:05:48.622 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+priority: [Redacted]
+2025-03-24 11:05:48.632 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.Login (CRUDExample)'
+2025-03-24 11:05:48.637 +02:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 11:05:48.663 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 11:05:48.667 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 11:05:48.672 +02:00 [INF] Executing ViewResult, running view Login.
+2025-03-24 11:05:48.685 +02:00 [INF] Executed ViewResult - view Login executed in 12.8765ms.
+2025-03-24 11:05:48.690 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.Login (CRUDExample) in 46.0313ms
+2025-03-24 11:05:48.695 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.Login (CRUDExample)'
+2025-03-24 11:05:48.699 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 24 Mar 2025 09:05:47 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-03-24 11:05:48.702 +02:00 [INF] HTTP GET /Account/Login responded 200 in 80.0906 ms
+2025-03-24 11:05:48.716 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/Login?ReturnUrl=%2FPersons%2FIndex - - - 200 - text/html;+charset=utf-8 102.5979ms
+2025-03-24 11:05:48.787 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_vs/browserLink - -
+2025-03-24 11:05:48.790 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - -
+2025-03-24 11:05:48.800 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - - - 200 16507 application/javascript;+charset=utf-8 10.4186ms
+2025-03-24 11:05:48.847 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.8227ms
+2025-03-24 11:05:51.297 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Persons/Create - -
+2025-03-24 11:05:51.305 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Persons/Create
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 11:05:51.315 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2025-03-24 11:05:51.339 +02:00 [INF] Route matched with {action = "Create", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2025-03-24 11:05:51.362 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 11:05:51.366 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 11:05:53.791 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 11:05:54.642 +02:00 [INF] Executed DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CountryID], [c].[CountryName]
+FROM [Countries] AS [c]
+2025-03-24 11:05:54.914 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 11:05:54.919 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 11:05:54.935 +02:00 [INF] Executing ViewResult, running view Create.
+2025-03-24 11:05:55.103 +02:00 [INF] Executed ViewResult - view Create executed in 172.0657ms.
+2025-03-24 11:05:55.117 +02:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Create (CRUDExample) in 3771.4628ms
+2025-03-24 11:05:55.131 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Create (CRUDExample)'
+2025-03-24 11:05:55.144 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 24 Mar 2025 09:05:55 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+My-Key-From-Controller: [Redacted]
+2025-03-24 11:05:55.151 +02:00 [INF] HTTP GET /Persons/Create responded 200 in 3846.4677 ms
+2025-03-24 11:05:55.180 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Persons/Create - - - 200 - text/html;+charset=utf-8 3884.1558ms
+2025-03-24 11:05:55.202 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_vs/browserLink - -
+2025-03-24 11:05:55.220 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.8126ms
+2025-03-24 11:05:55.223 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - -
+2025-03-24 11:05:55.230 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - - - 200 16507 application/javascript;+charset=utf-8 6.6963ms

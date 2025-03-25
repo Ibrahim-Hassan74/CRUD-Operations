@@ -1,3 +1,0 @@
-2025-03-16 02:44:09.842 +02:00 [INF] Application started. Press Ctrl+C to shut down.
-2025-03-16 02:44:09.862 +02:00 [INF] Hosting environment: Production
-2025-03-16 02:44:09.889 +02:00 [INF] Content root path: E:\aspnetcore\code\CRUDExample\CRUDExample\

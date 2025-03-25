@@ -14,3 +14,5 @@ E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\refint\ServiceC
 E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ServiceContracts.pdb
 E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ref\ServiceContracts.dll
 E:\aspnetcore\code\CRUDExample\ServiceContracts\obj\Debug\net6.0\ServiceContracts.sourcelink.json
+E:\aspnetcore\code\CRUDExample\ServiceContracts\bin\Debug\net6.0\IdentityEntities.dll
+E:\aspnetcore\code\CRUDExample\ServiceContracts\bin\Debug\net6.0\IdentityEntities.pdb

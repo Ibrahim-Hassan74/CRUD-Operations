@@ -1,0 +1,63 @@
+﻿@model LoginDTO
+
+@{
+    ViewBag.Title = "Login";
+    ViewBag.Login = "active";
+}
+
+<div class="text-secondary mb-3">
+    <span>Contacts</span>
+    <i class="fa-solid fa-caret-right"></i>
+    <span>Login</span>
+</div>
+
+<div class="container d-flex justify-content-center mt-5">
+    <div class="card p-5 shadow-lg rounded-3" style="max-width: 600px; width: 100%;">
+        <p class="text-center fs-6">
+            Not yet Registered?
+            <a asp-action="Register" asp-controller="Account" class="text-primary text-decoration-none">Register</a>
+        </p>
+        <h2 class="h4 text-center mb-4">Login</h2>
+
+        <form asp-controller="Account" asp-action="Login" method="post" asp-route-ReturnUrl="@Context.Request.Query["ReturnUrl"]" class="needs-validation">
+            <!-- Email -->
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label fw-bold">Email</label>
+                <input asp-for="Email" class="form-control rounded-2" type="email" placeholder="Enter your email" />
+                <span asp-validation-for="Email" class="text-danger small"></span>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label fw-bold">Password</label>
+                <input asp-for="Password" class="form-control rounded-2" type="password" placeholder="Enter your password" />
+                <span asp-validation-for="Password" class="text-danger small"></span>
+            </div>
+
+            <!-- Login Button -->
+            <div class="d-grid">
+                <button type="submit" class="btn btn-success rounded-pill py-2">Login</button>
+            </div>
+
+            <div asp-validation-summary="All" class="text-danger mt-2"></div>
+
+            @if (ViewBag.Errors != null)
+            {
+                <div class="text-danger mt-2">
+                    <ul class="list-unstyled">
+                        @foreach (string error in ViewBag.Errors)
+                        {
+                            <li>@error</li>
+                        }
+                    </ul>
+                </div>
+            }
+        </form>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" asp-fallback-test="window.jQuery" asp-fallback-src="~/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js" asp-fallback-test="window.jQuery.validator" asp-fallback-src="~/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js" asp-fallback-test="window.jQuery.validator.unobtrusive" asp-fallback-src="~/jquery.validate.unobtrusive.min.js"></script>
+}

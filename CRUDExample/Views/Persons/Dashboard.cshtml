@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    ViewBag.NamePage = "Dashboard";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm text-center p-3">
+                <h5>Total Persons</h5>
+                <h2 class="text-primary">123</h2>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm text-center p-3">
+                <h5>New Registrations</h5>
+                <h2 class="text-success">45</h2>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card shadow-sm text-center p-3">
+                <h5>Deleted Persons</h5>
+                <h2 class="text-danger">10</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Example Chart -->
+    <div class="row mt-4">
+        <div class="col-md-8 mx-auto">
+            <div class="card p-3 shadow">
+                <h5 class="text-center">User Growth</h5>
+                <canvas id="userChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Chart Example
+        var ctx = document.getElementById('userChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    label: 'New Users',
+                    data: [10, 20, 30, 40, 50],
+                    borderColor: 'blue',
+                    borderWidth: 2
+                }]
+            }
+        });
+    </script>
+}

@@ -1,0 +1,934 @@
+2025-03-24 10:09:43.672 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-24 10:09:43.688 +02:00 [INF] Hosting environment: Development
+2025-03-24 10:09:43.693 +02:00 [INF] Content root path: E:\aspnetcore\code\CRUDExample\CRUDExample\
+2025-03-24 10:19:37.599 +02:00 [INF] User profile is available. Using 'C:\Users\ibrah\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-03-24 10:19:38.215 +02:00 [INF] Now listening on: https://localhost:5275
+2025-03-24 10:19:41.513 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/ - -
+2025-03-24 10:19:41.687 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:41.843 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-24 10:19:41.899 +02:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-03-24 10:19:41.910 +02:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5275/Account/Login?ReturnUrl=%2F
+2025-03-24 10:19:41.927 +02:00 [INF] HTTP GET / responded 302 in 245.9703 ms
+2025-03-24 10:19:41.982 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/ - - - 302 0 - 487.4417ms
+2025-03-24 10:19:42.027 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/Login?ReturnUrl=%2F - -
+2025-03-24 10:19:42.044 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:42.091 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.Login (CRUDExample)'
+2025-03-24 10:19:42.174 +02:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:42.828 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:42.833 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:42.872 +02:00 [INF] Executing ViewResult, running view Login.
+2025-03-24 10:19:43.639 +02:00 [INF] Executed ViewResult - view Login executed in 765.3792ms.
+2025-03-24 10:19:43.651 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.Login (CRUDExample) in 1468.5348ms
+2025-03-24 10:19:43.659 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.Login (CRUDExample)'
+2025-03-24 10:19:43.685 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:43 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+X-Frame-Options: [Redacted]
+2025-03-24 10:19:43.714 +02:00 [INF] HTTP GET /Account/Login responded 200 in 1670.6024 ms
+2025-03-24 10:19:43.720 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/StyleSheet.css?v=GCR23VdJIf9aoEmqbgmCm6YTgyfq703ScTEHtwEE1sA - -
+2025-03-24 10:19:43.720 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - -
+2025-03-24 10:19:43.729 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /StyleSheet.css
+Accept: text/css,*/*;q=0.1
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+If-None-Match: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:43.747 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - - - 200 16507 application/javascript;+charset=utf-8 26.9234ms
+2025-03-24 10:19:43.749 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 1721.7642ms
+2025-03-24 10:19:43.761 +02:00 [INF] The file /StyleSheet.css was not modified
+2025-03-24 10:19:43.766 +02:00 [INF] Response:
+StatusCode: 304
+Content-Type: text/css
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Mon, 24 Mar 2025 04:11:38 GMT
+2025-03-24 10:19:43.773 +02:00 [INF] HTTP GET /StyleSheet.css responded 304 in 43.6900 ms
+2025-03-24 10:19:43.781 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/StyleSheet.css?v=GCR23VdJIf9aoEmqbgmCm6YTgyfq703ScTEHtwEE1sA - - - 304 - text/css 61.0432ms
+2025-03-24 10:19:43.796 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_vs/browserLink - -
+2025-03-24 10:19:44.009 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 212.1953ms
+2025-03-24 10:19:44.266 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/favicon.ico - -
+2025-03-24 10:19:44.270 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:44.281 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-24 10:19:44.285 +02:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-03-24 10:19:44.290 +02:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5275/Account/Login?ReturnUrl=%2Ffavicon.ico
+2025-03-24 10:19:44.293 +02:00 [INF] HTTP GET /favicon.ico responded 302 in 23.5466 ms
+2025-03-24 10:19:44.299 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/favicon.ico - - - 302 0 - 33.6052ms
+2025-03-24 10:19:44.306 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/Login?ReturnUrl=%2Ffavicon.ico - -
+2025-03-24 10:19:44.310 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:44.317 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.Login (CRUDExample)'
+2025-03-24 10:19:44.321 +02:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:44.352 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:44.379 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:44.384 +02:00 [INF] Executing ViewResult, running view Login.
+2025-03-24 10:19:44.397 +02:00 [INF] Executed ViewResult - view Login executed in 13.5826ms.
+2025-03-24 10:19:44.402 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.Login (CRUDExample) in 73.9694ms
+2025-03-24 10:19:44.407 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.Login (CRUDExample)'
+2025-03-24 10:19:44.411 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:44 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:44.414 +02:00 [INF] HTTP GET /Account/Login responded 200 in 103.4832 ms
+2025-03-24 10:19:44.420 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/Login?ReturnUrl=%2Ffavicon.ico - - - 200 - text/html;+charset=utf-8 114.2270ms
+2025-03-24 10:19:48.556 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/Register - -
+2025-03-24 10:19:48.568 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Register
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:48.573 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.Register (CRUDExample)'
+2025-03-24 10:19:48.579 +02:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:48.617 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:48.623 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:48.629 +02:00 [INF] Executing ViewResult, running view Register.
+2025-03-24 10:19:48.755 +02:00 [INF] Executed ViewResult - view Register executed in 128.2434ms.
+2025-03-24 10:19:48.761 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.Register (CRUDExample) in 173.0597ms
+2025-03-24 10:19:48.765 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.Register (CRUDExample)'
+2025-03-24 10:19:48.770 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:48 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:48.776 +02:00 [INF] HTTP GET /Account/Register responded 200 in 208.5450 ms
+2025-03-24 10:19:48.784 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/Register - - - 200 - text/html;+charset=utf-8 228.0943ms
+2025-03-24 10:19:48.860 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_vs/browserLink - -
+2025-03-24 10:19:48.901 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - -
+2025-03-24 10:19:48.910 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - - - 200 16507 application/javascript;+charset=utf-8 9.7168ms
+2025-03-24 10:19:48.992 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 132.0201ms
+2025-03-24 10:19:49.107 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/favicon.ico - -
+2025-03-24 10:19:49.114 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:49.118 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-03-24 10:19:49.127 +02:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-03-24 10:19:49.130 +02:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5275/Account/Login?ReturnUrl=%2Ffavicon.ico
+2025-03-24 10:19:49.133 +02:00 [INF] HTTP GET /favicon.ico responded 302 in 19.2292 ms
+2025-03-24 10:19:49.141 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/favicon.ico - - - 302 0 - 34.3434ms
+2025-03-24 10:19:49.147 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/Login?ReturnUrl=%2Ffavicon.ico - -
+2025-03-24 10:19:49.151 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:49.160 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.Login (CRUDExample)'
+2025-03-24 10:19:49.163 +02:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:49.171 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:49.176 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:49.180 +02:00 [INF] Executing ViewResult, running view Login.
+2025-03-24 10:19:49.191 +02:00 [INF] Executed ViewResult - view Login executed in 11.2359ms.
+2025-03-24 10:19:49.197 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.Login (CRUDExample) in 25.8969ms
+2025-03-24 10:19:49.201 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.Login (CRUDExample)'
+2025-03-24 10:19:49.209 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:49 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:49.212 +02:00 [INF] HTTP GET /Account/Login responded 200 in 61.3558 ms
+2025-03-24 10:19:49.218 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/Login?ReturnUrl=%2Ffavicon.ico - - - 200 - text/html;+charset=utf-8 71.0552ms
+2025-03-24 10:19:49.990 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ssssss%40gmail.com - -
+2025-03-24 10:19:49.994 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/IsEmailAlreadyRegistered
+Accept: application/json, text/javascript, */*; q=0.01
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:49.999 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:50.058 +02:00 [INF] Route matched with {action = "IsEmailAlreadyRegistered", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsEmailAlreadyRegistered(System.String) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:50.103 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:52.474 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:19:53.973 +02:00 [INF] Executed DbCommand (160ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-24 10:19:54.348 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:54.362 +02:00 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-03-24 10:19:54.374 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample) in 4309.1128ms
+2025-03-24 10:19:54.381 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:54.391 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:54 GMT
+Server: Kestrel
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:54.395 +02:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 200 in 4401.7916 ms
+2025-03-24 10:19:54.417 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ssssss%40gmail.com - - - 200 - application/json;+charset=utf-8 4427.3229ms
+2025-03-24 10:19:57.747 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=i%40gmail.com - -
+2025-03-24 10:19:57.751 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/IsEmailAlreadyRegistered
+Accept: application/json, text/javascript, */*; q=0.01
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:57.755 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:57.758 +02:00 [INF] Route matched with {action = "IsEmailAlreadyRegistered", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsEmailAlreadyRegistered(System.String) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:57.768 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:57.864 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:19:57.887 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-24 10:19:57.899 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:57.904 +02:00 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-03-24 10:19:57.909 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample) in 143.0253ms
+2025-03-24 10:19:57.915 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:57.920 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:57 GMT
+Server: Kestrel
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:57.923 +02:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 200 in 172.5095 ms
+2025-03-24 10:19:57.931 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=i%40gmail.com - - - 200 - application/json;+charset=utf-8 183.9717ms
+2025-03-24 10:19:58.000 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ib%40gmail.com - -
+2025-03-24 10:19:58.004 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/IsEmailAlreadyRegistered
+Accept: application/json, text/javascript, */*; q=0.01
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:58.008 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:58.012 +02:00 [INF] Route matched with {action = "IsEmailAlreadyRegistered", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsEmailAlreadyRegistered(System.String) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:58.019 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:58.041 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:19:58.054 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-24 10:19:58.066 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:58.070 +02:00 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-03-24 10:19:58.074 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample) in 55.0587ms
+2025-03-24 10:19:58.079 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:58.084 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:57 GMT
+Server: Kestrel
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:58.088 +02:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 200 in 83.8021 ms
+2025-03-24 10:19:58.096 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ib%40gmail.com - - - 200 - application/json;+charset=utf-8 96.2764ms
+2025-03-24 10:19:58.251 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibt%40gmail.com - -
+2025-03-24 10:19:58.256 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/IsEmailAlreadyRegistered
+Accept: application/json, text/javascript, */*; q=0.01
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:58.260 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:58.265 +02:00 [INF] Route matched with {action = "IsEmailAlreadyRegistered", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsEmailAlreadyRegistered(System.String) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:58.271 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:58.276 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:19:58.288 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-24 10:19:58.300 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:58.304 +02:00 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-03-24 10:19:58.312 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample) in 41.1456ms
+2025-03-24 10:19:58.317 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:58.321 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:58 GMT
+Server: Kestrel
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:58.324 +02:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 200 in 68.3142 ms
+2025-03-24 10:19:58.331 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibt%40gmail.com - - - 200 - application/json;+charset=utf-8 79.8035ms
+2025-03-24 10:19:58.705 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ib%40gmail.com - -
+2025-03-24 10:19:58.709 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/IsEmailAlreadyRegistered
+Accept: application/json, text/javascript, */*; q=0.01
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:58.713 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:58.717 +02:00 [INF] Route matched with {action = "IsEmailAlreadyRegistered", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsEmailAlreadyRegistered(System.String) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:58.723 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:58.729 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:19:58.741 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-24 10:19:58.754 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:58.758 +02:00 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-03-24 10:19:58.768 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample) in 45.1691ms
+2025-03-24 10:19:58.776 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:58.806 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:58 GMT
+Server: Kestrel
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:58.818 +02:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 200 in 109.1140 ms
+2025-03-24 10:19:58.832 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ib%40gmail.com - - - 200 - application/json;+charset=utf-8 126.6779ms
+2025-03-24 10:19:58.902 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibr%40gmail.com - -
+2025-03-24 10:19:58.905 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/IsEmailAlreadyRegistered
+Accept: application/json, text/javascript, */*; q=0.01
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:58.909 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:58.913 +02:00 [INF] Route matched with {action = "IsEmailAlreadyRegistered", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsEmailAlreadyRegistered(System.String) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:58.921 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:58.925 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:19:58.936 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-24 10:19:58.949 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:58.953 +02:00 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-03-24 10:19:58.957 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample) in 36.7457ms
+2025-03-24 10:19:58.962 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:58.966 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:58 GMT
+Server: Kestrel
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:58.969 +02:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 200 in 64.0820 ms
+2025-03-24 10:19:58.976 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibr%40gmail.com - - - 200 - application/json;+charset=utf-8 73.8177ms
+2025-03-24 10:19:59.200 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibra%40gmail.com - -
+2025-03-24 10:19:59.206 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/IsEmailAlreadyRegistered
+Accept: application/json, text/javascript, */*; q=0.01
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:59.214 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:59.221 +02:00 [INF] Route matched with {action = "IsEmailAlreadyRegistered", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsEmailAlreadyRegistered(System.String) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:59.232 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:59.238 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:19:59.250 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-24 10:19:59.263 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:59.268 +02:00 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-03-24 10:19:59.273 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample) in 41.9674ms
+2025-03-24 10:19:59.279 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:59.283 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:59 GMT
+Server: Kestrel
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:59.287 +02:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 200 in 80.8119 ms
+2025-03-24 10:19:59.293 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibra%40gmail.com - - - 200 - application/json;+charset=utf-8 93.8915ms
+2025-03-24 10:19:59.304 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibrah%40gmail.com - -
+2025-03-24 10:19:59.307 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/IsEmailAlreadyRegistered
+Accept: application/json, text/javascript, */*; q=0.01
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:59.311 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:59.316 +02:00 [INF] Route matched with {action = "IsEmailAlreadyRegistered", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsEmailAlreadyRegistered(System.String) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:59.323 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:59.329 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:19:59.340 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-24 10:19:59.353 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:59.358 +02:00 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-03-24 10:19:59.362 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample) in 39.2125ms
+2025-03-24 10:19:59.367 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:59.371 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:59 GMT
+Server: Kestrel
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:59.373 +02:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 200 in 65.9116 ms
+2025-03-24 10:19:59.381 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibrah%40gmail.com - - - 200 - application/json;+charset=utf-8 76.8014ms
+2025-03-24 10:19:59.526 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibrahi%40gmail.com - -
+2025-03-24 10:19:59.530 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/IsEmailAlreadyRegistered
+Accept: application/json, text/javascript, */*; q=0.01
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:59.534 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:59.537 +02:00 [INF] Route matched with {action = "IsEmailAlreadyRegistered", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsEmailAlreadyRegistered(System.String) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:59.544 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:59.549 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:19:59.560 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-24 10:19:59.572 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:59.576 +02:00 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-03-24 10:19:59.581 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample) in 37.8581ms
+2025-03-24 10:19:59.586 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:59.590 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:59 GMT
+Server: Kestrel
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:59.593 +02:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 200 in 63.1895 ms
+2025-03-24 10:19:59.600 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibrahi%40gmail.com - - - 200 - application/json;+charset=utf-8 74.2476ms
+2025-03-24 10:19:59.759 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibrahim%40gmail.com - -
+2025-03-24 10:19:59.763 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/IsEmailAlreadyRegistered
+Accept: application/json, text/javascript, */*; q=0.01
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+X-Requested-With: XMLHttpRequest
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:19:59.767 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:59.770 +02:00 [INF] Route matched with {action = "IsEmailAlreadyRegistered", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] IsEmailAlreadyRegistered(System.String) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:19:59.777 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:19:59.783 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:19:59.793 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-03-24 10:19:59.807 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:19:59.810 +02:00 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-03-24 10:19:59.815 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample) in 38.2591ms
+2025-03-24 10:19:59.820 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.IsEmailAlreadyRegistered (CRUDExample)'
+2025-03-24 10:19:59.823 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Mon, 24 Mar 2025 08:19:59 GMT
+Server: Kestrel
+My-Key-From-Global: [Redacted]
+2025-03-24 10:19:59.830 +02:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 200 in 67.3133 ms
+2025-03-24 10:19:59.838 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Account/IsEmailAlreadyRegistered?Email=ibrahim%40gmail.com - - - 200 - application/json;+charset=utf-8 79.5214ms
+2025-03-24 10:20:07.834 +02:00 [INF] Request starting HTTP/2 POST https://localhost:5275/Account/Register application/x-www-form-urlencoded 307
+2025-03-24 10:20:07.847 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /Account/Register
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cache-Control: max-age=0
+Content-Type: application/x-www-form-urlencoded
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Content-Length: 307
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:20:07.853 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.AccountController.Register (CRUDExample)'
+2025-03-24 10:20:07.886 +02:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ServiceContracts.DTO.RegisterDTO) on controller CRUDExample.Controllers.AccountController (CRUDExample).
+2025-03-24 10:20:07.945 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:20:08.037 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:20:08.067 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-24 10:20:08.567 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PersonName], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15);
+2025-03-24 10:20:17.592 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-03-24 10:20:19.656 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-03-24 10:20:19.789 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2025-03-24 10:20:22.291 +02:00 [INF] Executed DbCommand (70ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-03-24 10:20:22.446 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid), @__get_Item_1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__get_Item_0) AND ([a].[RoleId] = @__get_Item_1)
+2025-03-24 10:20:22.472 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-03-24 10:20:22.531 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-03-24 10:20:22.582 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+2025-03-24 10:20:22.621 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[@p15='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p16='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PersonName] = @p9, [PhoneNumber] = @p10, [PhoneNumberConfirmed] = @p11, [SecurityStamp] = @p12, [TwoFactorEnabled] = @p13, [UserName] = @p14
+WHERE [Id] = @p15 AND [ConcurrencyStamp] = @p16;
+SELECT @@ROWCOUNT;
+2025-03-24 10:20:25.393 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-03-24 10:20:25.602 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-03-24 10:20:25.623 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-03-24 10:20:25.657 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-03-24 10:20:25.687 +02:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-03-24 10:20:27.748 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:20:27.756 +02:00 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2025-03-24 10:20:27.760 +02:00 [INF] Executed action CRUDExample.Controllers.AccountController.Register (CRUDExample) in 19865.5317ms
+2025-03-24 10:20:27.767 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.AccountController.Register (CRUDExample)'
+2025-03-24 10:20:27.771 +02:00 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /Persons/Index
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-03-24 10:20:27.773 +02:00 [INF] HTTP POST /Account/Register responded 302 in 19929.2057 ms
+2025-03-24 10:20:27.780 +02:00 [INF] Request finished HTTP/2 POST https://localhost:5275/Account/Register application/x-www-form-urlencoded 307 - 302 0 - 19945.5740ms
+2025-03-24 10:20:27.790 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/Persons/Index - -
+2025-03-24 10:20:27.797 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Persons/Index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cache-Control: max-age=0
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+priority: [Redacted]
+2025-03-24 10:20:27.812 +02:00 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-24 10:20:27.827 +02:00 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (CRUDExample).
+2025-03-24 10:20:27.848 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:20:27.852 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:20:27.856 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - before
+2025-03-24 10:20:27.861 +02:00 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-03-24 10:20:27.868 +02:00 [INF] Index action method of persons controller
+2025-03-24 10:20:27.879 +02:00 [INF] GetFilteredPersons in PersonsService
+2025-03-24 10:20:27.889 +02:00 [INF] Entity Framework Core 6.0.5 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2025-03-24 10:20:28.031 +02:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReciveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-03-24 10:20:28.146 +02:00 [INF] Time for filtered persons from database completed in 260.1 ms
+2025-03-24 10:20:28.183 +02:00 [INF] GetSortedPersons of PersonsService
+2025-03-24 10:20:28.189 +02:00 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-03-24 10:20:28.194 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:20:28.198 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:20:28.203 +02:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync method - after
+2025-03-24 10:20:28.210 +02:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2025-03-24 10:20:28.216 +02:00 [INF] Executing ViewResult, running view Index.
+2025-03-24 10:20:28.345 +02:00 [INF] Executed ViewResult - view Index executed in 129.8527ms.
+2025-03-24 10:20:28.351 +02:00 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2025-03-24 10:20:28.356 +02:00 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (CRUDExample) in 519.3563ms
+2025-03-24 10:20:28.361 +02:00 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (CRUDExample)'
+2025-03-24 10:20:28.368 +02:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 24 Mar 2025 08:20:27 GMT
+Server: Kestrel
+Last-Modified: 24/03/2025 10:20
+My-Key-From-Global: [Redacted]
+My-Key-From-Action: [Redacted]
+My-Key-From-Controller: [Redacted]
+2025-03-24 10:20:28.371 +02:00 [INF] HTTP GET /Persons/Index responded 200 in 574.4757 ms
+2025-03-24 10:20:28.378 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/Persons/Index - - - 200 - text/html;+charset=utf-8 587.9282ms
+2025-03-24 10:20:28.431 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_vs/browserLink - -
+2025-03-24 10:20:28.433 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - -
+2025-03-24 10:20:28.442 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_framework/aspnetcore-browser-refresh.js - - - 200 16507 application/javascript;+charset=utf-8 8.9382ms
+2025-03-24 10:20:28.449 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.9620ms
+2025-03-24 10:20:28.601 +02:00 [INF] Request starting HTTP/2 GET https://localhost:5275/favicon.ico - -
+2025-03-24 10:20:28.605 +02:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5275
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
+:method: [Redacted]
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,ar;q=0.8
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+priority: [Redacted]
+2025-03-24 10:20:28.612 +02:00 [INF] Response:
+StatusCode: 404
+2025-03-24 10:20:28.615 +02:00 [INF] HTTP GET /favicon.ico responded 404 in 9.4605 ms
+2025-03-24 10:20:28.625 +02:00 [INF] Request finished HTTP/2 GET https://localhost:5275/favicon.ico - - - 404 0 - 23.6198ms

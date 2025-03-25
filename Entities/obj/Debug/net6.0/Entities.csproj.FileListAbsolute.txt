@@ -13,3 +13,6 @@ E:\aspnetcore\code\CRUDExample\Entities\obj\Debug\net6.0\Entities.csproj.Assembl
 E:\aspnetcore\code\CRUDExample\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
 E:\aspnetcore\code\CRUDExample\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
 E:\aspnetcore\code\CRUDExample\Entities\obj\Debug\net6.0\Entities.sourcelink.json
+E:\aspnetcore\code\CRUDExample\Entities\bin\Debug\net6.0\IdentityEntities.dll
+E:\aspnetcore\code\CRUDExample\Entities\bin\Debug\net6.0\IdentityEntities.pdb
+E:\aspnetcore\code\CRUDExample\Entities\obj\Debug\net6.0\Entities.csproj.Up2Date

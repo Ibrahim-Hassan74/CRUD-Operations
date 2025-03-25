@@ -473,3 +473,12 @@ th a:hover, .table-header-tag:hover, .icon-i:hover {
     color: #0d6efd !important;
 }
 
+.user-info {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and name */
+}
+

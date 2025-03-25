@@ -1,9 +1,11 @@
 # CRUD Operation with ASP.NET Core MVC
 
 ## Overview
+
 This project demonstrates a CRUD (Create, Read, Update, Delete) operation using ASP.NET Core MVC with Entity Framework Core (EF Core). It follows Clean Architecture principles, implements logging with Serilog, utilizes Tag Helpers, applies action filters, and includes unit testing using xUnit.
 
 ## Features
+
 - **ASP.NET Core MVC** for building the web application.
 - **Entity Framework Core (EF Core)** for database operations.
 - **Clean Architecture** to separate concerns.
@@ -13,6 +15,7 @@ This project demonstrates a CRUD (Create, Read, Update, Delete) operation using 
 - **xUnit** for unit testing.
 
 ## Technologies Used
+
 - **ASP.NET Core MVC**
 - **Entity Framework Core**
 - **SQL Server**
@@ -22,6 +25,7 @@ This project demonstrates a CRUD (Create, Read, Update, Delete) operation using 
 - **xUnit Testing Framework**
 
 ## Project Structure (Clean Architecture with Class Libraries)
+
 ```
 📦 CRUDProject
  ┣ 📂 Application (Class Library for Business Logic)
@@ -42,16 +46,20 @@ This project demonstrates a CRUD (Create, Read, Update, Delete) operation using 
 ```
 
 ## Setup Instructions
+
 1. **Clone the repository:**
+
    ```sh
-   git clone https://github.com/your-repo-url.git
+   git clone https://github.com/Ibrahim-Hassan74/CRUD-Operations
    cd CRUDProject
    ```
 
 2. **Update the database connection string**
+
    - Navigate to `appsettings.json` and modify the `ConnectionStrings` section to match your database.
 
 3. **Apply Migrations:**
+
    ```sh
    dotnet ef database update
    ```
@@ -63,6 +71,7 @@ This project demonstrates a CRUD (Create, Read, Update, Delete) operation using 
    The application will be available at `https://localhost:5001/`.
 
 ## Logging with Serilog
+
 - Logs are configured in `Program.cs` using Serilog.
 - Logs are stored in a file and displayed in the console.
 - Example log format:
@@ -71,18 +80,21 @@ This project demonstrates a CRUD (Create, Read, Update, Delete) operation using 
   ```
 
 ## Unit Testing with xUnit
+
 - Navigate to the `Tests` project and run the tests:
   ```sh
   dotnet test
   ```
 
 ## Action Filters
+
 - Custom action filters are used to handle logging and validation.
 - Example: `LoggingActionFilter` logs request and response details.
 
 ## Contributing
+
 Feel free to submit issues or pull requests to improve the project.
 
 ## License
-This project is licensed under the MIT License.
 
+This project is licensed under the MIT License.

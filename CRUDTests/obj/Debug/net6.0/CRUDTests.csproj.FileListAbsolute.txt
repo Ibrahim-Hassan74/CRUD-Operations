@@ -491,3 +491,10 @@ E:\aspnetcore\code\CRUDExample\CRUDTests\bin\Debug\net6.0\SerilogTimings.dll
 E:\aspnetcore\code\CRUDExample\CRUDTests\obj\Debug\net6.0\CRUDTests.sourcelink.json
 E:\aspnetcore\code\CRUDExample\CRUDTests\bin\Debug\net6.0\Excetions.dll
 E:\aspnetcore\code\CRUDExample\CRUDTests\bin\Debug\net6.0\Excetions.pdb
+E:\aspnetcore\code\CRUDExample\CRUDTests\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\aspnetcore\code\CRUDExample\CRUDTests\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\aspnetcore\code\CRUDExample\CRUDTests\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\aspnetcore\code\CRUDExample\CRUDTests\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+E:\aspnetcore\code\CRUDExample\CRUDTests\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+E:\aspnetcore\code\CRUDExample\CRUDTests\bin\Debug\net6.0\IdentityEntities.dll
+E:\aspnetcore\code\CRUDExample\CRUDTests\bin\Debug\net6.0\IdentityEntities.pdb

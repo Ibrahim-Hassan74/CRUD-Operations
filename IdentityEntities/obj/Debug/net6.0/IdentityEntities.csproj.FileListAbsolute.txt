@@ -1,0 +1,13 @@
+E:\aspnetcore\code\CRUDExample\IdentityEntities\bin\Debug\net6.0\IdentityEntities.deps.json
+E:\aspnetcore\code\CRUDExample\IdentityEntities\bin\Debug\net6.0\IdentityEntities.dll
+E:\aspnetcore\code\CRUDExample\IdentityEntities\bin\Debug\net6.0\IdentityEntities.pdb
+E:\aspnetcore\code\CRUDExample\IdentityEntities\obj\Debug\net6.0\IdentityEntities.csproj.AssemblyReference.cache
+E:\aspnetcore\code\CRUDExample\IdentityEntities\obj\Debug\net6.0\IdentityEntities.GeneratedMSBuildEditorConfig.editorconfig
+E:\aspnetcore\code\CRUDExample\IdentityEntities\obj\Debug\net6.0\IdentityEntities.AssemblyInfoInputs.cache
+E:\aspnetcore\code\CRUDExample\IdentityEntities\obj\Debug\net6.0\IdentityEntities.AssemblyInfo.cs
+E:\aspnetcore\code\CRUDExample\IdentityEntities\obj\Debug\net6.0\IdentityEntities.csproj.CoreCompileInputs.cache
+E:\aspnetcore\code\CRUDExample\IdentityEntities\obj\Debug\net6.0\IdentityEntities.sourcelink.json
+E:\aspnetcore\code\CRUDExample\IdentityEntities\obj\Debug\net6.0\IdentityEntities.dll
+E:\aspnetcore\code\CRUDExample\IdentityEntities\obj\Debug\net6.0\refint\IdentityEntities.dll
+E:\aspnetcore\code\CRUDExample\IdentityEntities\obj\Debug\net6.0\IdentityEntities.pdb
+E:\aspnetcore\code\CRUDExample\IdentityEntities\obj\Debug\net6.0\ref\IdentityEntities.dll
